@@ -44,13 +44,13 @@ a img {
 html, body {
   height: 100%; }
 
-#root {
+#brents-blog {
   clear: both;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin-bottom: -80px; }
-  #root #sticky-footer-hack {
+  #brents-blog #sticky-footer-hack {
     height: 80px; }
 
 footer {
