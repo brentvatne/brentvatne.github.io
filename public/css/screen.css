@@ -41,32 +41,20 @@ table {
 a img {
   border: none; }
 
-html, body {
-  height: 100%; }
-
-#root {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -80px; }
-  #root #sticky-footer-hack {
-    height: 80px; }
-
-footer {
-  clear: both;
-  position: relative;
-  height: 80px; }
-
 body {
+  font-family: Georgia, Times New Roman, serif;
+  font-size: 18px;
   width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  *zoom: 1;
-  padding-top: 45px;
-  font-family: Georgia, Times New Roman, serif;
-  font-size: 18px; }
+  *zoom: 1; }
+  body .wrapper {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1; }
   body #brents-blog {
+    padding-top: 45px;
     display: inline;
     float: left;
     margin-right: 10px;
@@ -155,7 +143,8 @@ footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 700px; }
+  width: 700px;
+  margin-top: 40px; }
   * html footer {
     overflow-x: hidden; }
   footer nav {
@@ -192,7 +181,8 @@ footer {
         display: inline; }
 
 #disqus_thread {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .highlight {
   margin: 12px 0; }
@@ -213,3 +203,6 @@ pre code {
   display: block;
   background-color: #EEE;
   padding: 5px 7px; }
+
+#dsq-subscribe {
+  display: none; }

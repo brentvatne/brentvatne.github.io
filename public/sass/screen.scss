@@ -6,15 +6,18 @@
 @import "partials/base";
 
 @import "compass/layout/sticky-footer";
-@include sticky-footer(80px, "#root", "#sticky-footer-hack", "footer");
 
 body {
-  @include container;
-  padding-top: 45px;
   font-family: Georgia, Times New Roman, serif;
   font-size: 18px;
+  @include container;
+
+  .wrapper {
+    @include container;
+  }
 
   #brents-blog {
+    padding-top: 45px;
     @include column($blueprint-grid-columns);
   }
 
@@ -140,6 +143,7 @@ article.complete {
 
 footer {
   @include column($blueprint-grid-columns);
+  margin-top: 40px;
   nav {
     @include horizontal-lists;
     text-align: center;
@@ -153,6 +157,7 @@ footer {
 
 #disqus_thread {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .highlight {
@@ -177,4 +182,8 @@ pre code {
   display: block;
   background-color: #EEE;
   padding: 5px 7px;
+}
+
+#dsq-subscribe {
+  display: none;
 }
