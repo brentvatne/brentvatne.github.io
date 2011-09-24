@@ -10,8 +10,9 @@
 body {
   font-family: Georgia, Times New Roman, serif;
   font-size: 18px;
-  @include container;
+  width: $blueprint-container-size;
 
+  margin: 0 auto;
   .wrapper {
     @include container;
   }

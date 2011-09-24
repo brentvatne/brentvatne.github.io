@@ -13,4 +13,3 @@ Took a couple hours today to set up this simple blog powered by Jekyll
 puts "hello world"
 
 {% endhighlight %}
-

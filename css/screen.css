@@ -45,9 +45,7 @@ body {
   font-family: Georgia, Times New Roman, serif;
   font-size: 18px;
   width: 700px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1; }
+  margin: 0 auto; }
   body .wrapper {
     width: 700px;
     margin: 0 auto;
