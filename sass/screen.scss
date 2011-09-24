@@ -1,0 +1,180 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+@import "blueprint/grid";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+@import "compass/layout/sticky-footer";
+@include sticky-footer(80px, "#root", "#sticky-footer-hack", "footer");
+
+body {
+  @include container;
+  padding-top: 45px;
+  font-family: Georgia, Times New Roman, serif;
+  font-size: 18px;
+
+  #brents-blog {
+    @include column($blueprint-grid-columns);
+  }
+
+  a {
+    color: #333;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: normal;
+    text-align: center;
+    font-family: Georgia, Times New Roman, serif;
+    letter-spacing: -0.03em;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: normal;
+    text-align: center;
+    color: #999;
+    font-family: Georgia, Times New Roman, serif;
+    letter-spacing: -0.03em;
+  }
+
+
+  h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+    text-align: center;
+    color: #aaa;
+    font-family: Georgia, Times New Roman, serif;
+    letter-spacing: -0.03em;
+  }
+
+
+  h4 {
+    font-size: 17px;
+    font-weight: normal;
+    font-family: Georgia, Times New Roman, serif;
+    letter-spacing: -0.03em;
+  }
+
+}
+
+
+article {
+  h3 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #666;
+  }
+
+ h2 {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 27px;
+  color: #333;
+  }
+
+  header {
+    h4 {
+      display: inline-block;
+    }
+    time {
+      display: inline-block;
+      padding-left: 10px;
+      font-size: 80%;
+      color: #aaa;
+      font-style: italic;
+    }
+  }
+
+  aside.note {
+    background: #fff url(/images/note.gif) no-repeat -5px -5px;
+  }
+
+  aside.caution {
+    background: #fff url(/images/caution.gif) no-repeat -5px -5px;
+  }
+
+  aside.tip {
+    background: #fff url(/images/tip.gif) no-repeat -5px -5px;
+  }
+
+}
+
+article.complete {
+
+  hgroup {
+    text-align: center;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 25px;
+      padding: 0px;
+    }
+    time {
+      margin: 5px 0px 0px 0px;
+      padding: 0px;
+      font-style: normal;
+      font-size: 16px;
+    }
+  }
+
+
+}
+
+
+footer {
+  @include column($blueprint-grid-columns);
+  nav {
+    @include horizontal-lists;
+    text-align: center;
+    ul {
+      @include cross-browser-inline-block;
+      li {
+      }
+    }
+  }
+}
+
+#disqus_thread {
+  margin-top: 50px;
+}
+
+.highlight {
+  margin: 12px 0;
+}
+
+.highlight pre {
+  font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
+  background-color: #232323;
+  color: #E6E0DB;
+}
+
+code {
+  border: solid 1px #CCC;
+  background-color: #EEE;
+  font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
+  font-size: 15px;
+  padding: 0 3px;
+}
+
+pre code {
+  display: block;
+  background-color: #EEE;
+  padding: 5px 7px;
+}

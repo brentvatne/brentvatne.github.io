@@ -3,8 +3,23 @@ layout: default
 title: brent's blog
 ---
 
-{% for post in site.posts limit:5 %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  {{ post.content }}
-  <em>Posted on {{ post.date | date_to_long_string }}.</em>
+<header>
+  <h1><a href="/">{{ page.title }}</a></h1>
+</header>
+<section id="blog-post-listing">
+{% for post in site.posts limit:3 %}
+  <article>
+    <header>
+      <hgroup>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <time>{{ post.date | date_to_long_string }}</time>
+      </hgroup>
+    </header>
+
+    <section class="blog-post-body">
+      {{ post.description }}
+    </section>
+  </article>
 {% endfor %}
+</section>
+
