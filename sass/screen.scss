@@ -6,7 +6,7 @@
 @import "partials/base";
 
 @import "compass/layout/sticky-footer";
-@include sticky-footer(80px, "#brents-blog", "#sticky-footer-hack", "footer");
+@include sticky-footer(80px, "#root", "#sticky-footer-hack", "footer");
 
 body {
   @include container;
@@ -178,4 +178,8 @@ pre code {
   display: block;
   background-color: #EEE;
   padding: 5px 7px;
+}
+
+#dsq-subscribe {
+  display: none;
 }
