@@ -192,7 +192,8 @@ footer {
         display: inline; }
 
 #disqus_thread {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .highlight {
   margin: 12px 0; }
