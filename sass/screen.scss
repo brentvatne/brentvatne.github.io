@@ -1,21 +1,15 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import "blueprint/reset";
-@import "blueprint/grid";
+@import "base";
+@import "layout";
+@import "skeleton";
 
-// To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
+
 @import "typography";
 
-@import "compass/layout/sticky-footer";
-
 body {
-  width: $blueprint-container-size;
 
   margin: 0 auto;
-  .wrapper {
-    @include container;
-  }
-
   h4 {
     color: #ccc;
     padding-top: 20px;
@@ -24,7 +18,6 @@ body {
 
   #brents-blog {
     padding-top: 45px;
-    @include column($blueprint-grid-columns);
 
     h1 {
       text-align: center;
@@ -111,7 +104,6 @@ article.complete {
 
 
 footer {
-  @include column($blueprint-grid-columns);
   margin-top: 40px;
   nav {
     @include horizontal-lists;
