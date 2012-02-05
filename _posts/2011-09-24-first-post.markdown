@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cerimonial first post
+title: Ceremonial first post
 description: Took a couple hours today to set up this simple blog powered by Jekyll..
 ---
 
