@@ -8,22 +8,37 @@
     <meta name="description" content="Brent Vatne's blog" />
     <meta name="keywords" content="" />
     <meta name="language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>brent's blog</title>
+    <script type="text/javascript" src="http://use.typekit.com/zek4ano.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="/css/screen.css" />
     <link rel="stylesheet" href="/css/railscasts.css" />
     <script type="text/javascript">
-          //put google analytics here
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10128745-7']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
     </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 
   <body>
-    <section id="brents-blog">
-      <header>
+    <div class="container">
+      <div class="sixteen columns">
+        <section id="brents-blog">
+          <header>
   <h1><a href="/">brent's blog</a></h1>
 </header>
 <section id="blog-post-listing">
@@ -31,7 +46,20 @@
   <article>
     <header>
       <hgroup>
-        <h4><a href="/first-post">Cerimonial first post</a></h4>
+        <h4><a href="/mendicant-university">Learning at Mendicant University</a></h4>
+        <time>01 February 2012</time>
+      </hgroup>
+    </header>
+
+    <section class="blog-post-body">
+      About my experiences at the school during January, 2012.
+    </section>
+  </article>
+
+  <article>
+    <header>
+      <hgroup>
+        <h4><a href="/first-post">Ceremonial first post</a></h4>
         <time>24 September 2011</time>
       </hgroup>
     </header>
@@ -44,17 +72,19 @@
 </section>
 
 
-    </section>
+        </section>
+      </div>
 
-    <footer>
-      <nav>
-        <ul id="brents-links">
-          <li><a href="http://www.github.com/brentvatne/">github.com/brentvatne</a></li>
-          <li><a href="http://www.twitter.com/notbrent/">@notbrent</a></li>
-          <li><a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a></li>
-        </ul>
-      </nav>
-    </footer>
+      <div class="sixteen columns">
+        <footer>
+          <nav>
+            <a href="http://www.github.com/brentvatne/">github.com/brentvatne</a>
+            <a href="http://www.twitter.com/notbrent/">@notbrent</a>
+            <a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a>
+          </nav>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
 

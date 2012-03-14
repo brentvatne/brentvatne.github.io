@@ -8,32 +8,48 @@
     <meta name="description" content="Brent Vatne's blog" />
     <meta name="keywords" content="" />
     <meta name="language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Cerimonial first post</title>
+    <title>Ceremonial first post</title>
+    <script type="text/javascript" src="http://use.typekit.com/zek4ano.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="/css/screen.css" />
     <link rel="stylesheet" href="/css/railscasts.css" />
     <script type="text/javascript">
-          //put google analytics here
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-10128745-7']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
     </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 
   <body>
-    <section id="brents-blog">
-      <article class="complete">
-  <header>
-    <hgroup>
-      <h1>Cerimonial first post</h1>
-      <h2><a href="/">Brent Vatne</a></h2>
-      <time>24 September 2011</time>
-    </hgroup>
-  </header>
+    <div class="container">
+      <div class="sixteen columns">
+        <section id="brents-blog">
+          <div class="sixteen columns">
+  <article class="complete">
+    <header>
+      <hgroup>
+        <h1>Ceremonial first post</h1>
+        <h2><a href="/">Brent Vatne</a></h2>
+        <time>24 September 2011</time>
+      </hgroup>
+    </header>
 
-  <section class="blog-post-body">
-    <p>Took a couple hours today to set up this simple blog powered by Jekyll
+    <section class="blog-post-body">
+      <p>Took a couple hours today to set up this simple blog powered by Jekyll
 (for static site generation in Ruby) and Disqus for comments.</p>
 
 <div class="highlight"><pre><code class="ruby"><span class="c1">#ruby code goes here</span>
@@ -44,8 +60,8 @@
 
 
 
-  </section>
-</article>
+    </section>
+  </article>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -61,19 +77,21 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
 
+        </section>
+      </div>
 
-    </section>
-
-    <footer>
-      <nav>
-        <ul id="brents-links">
-          <li><a href="http://www.github.com/brentvatne/">github.com/brentvatne</a></li>
-          <li><a href="http://www.twitter.com/notbrent/">@notbrent</a></li>
-          <li><a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a></li>
-        </ul>
-      </nav>
-    </footer>
+      <div class="sixteen columns">
+        <footer>
+          <nav>
+            <a href="http://www.github.com/brentvatne/">github.com/brentvatne</a>
+            <a href="http://www.twitter.com/notbrent/">@notbrent</a>
+            <a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a>
+          </nav>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
 

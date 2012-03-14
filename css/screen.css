@@ -1154,9 +1154,10 @@ body {
   body h4 {
     color: #ccc;
     padding-top: 20px;
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
   body #brents-blog {
-    padding-top: 45px; }
+    padding-top: 25px; }
     body #brents-blog h1 {
       text-align: center;
       margin-bottom: 25px;
@@ -1174,9 +1175,10 @@ body {
     text-align: center; }
     body #blog-post-listing h4 {
       font-weight: bold;
-      display: block; }
+      display: block;
+      line-height: 20px; }
     body #blog-post-listing article {
-      padding-bottom: 15px; }
+      padding-bottom: 17px; }
 
 article h3 {
   text-align: left;
@@ -1232,15 +1234,8 @@ footer {
           padding-right: 0; }
         footer nav ul li.last {
           padding-right: 0; }
-    footer nav ul {
-      display: inline-block;
-      /* For normal, healthy browsers */ }
-      * html footer nav ul {
-        /* for IE6 */
-        display: inline; }
-      * + html footer nav ul {
-        /* for IE7 */
-        display: inline; }
+    footer nav a {
+      padding: 0px 2px 8px 2px; }
 
 h3 {
   padding-top: 20px; }

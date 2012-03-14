@@ -1,119 +1,84 @@
 // This import applies a global reset to any page that imports this stylesheet.
-@import "blueprint/reset";
-@import "blueprint/grid";
+@import "base";
+@import "layout";
+@import "skeleton";
 
-// To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
 
-@import "compass/layout/sticky-footer";
+@import "typography";
 
 body {
-  font-family: Georgia, Times New Roman, serif;
-  font-size: 18px;
-  width: $blueprint-container-size;
 
   margin: 0 auto;
-  .wrapper {
-    @include container;
+  h4 {
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   #brents-blog {
-    padding-top: 45px;
-    @include column($blueprint-grid-columns);
+    padding-top: 25px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+  }
+
+  h1, h2, h4, footer {
+    a {
+      color: #333;
+      &:hover {
+        color: #7d7d7d;
+      }
+    }
   }
 
   a {
-    color: #333;
-  }
-
-  h1 {
-    margin-bottom: 15px;
-    font-size: 35px;
-    line-height: 37px;
-    font-weight: normal;
-    text-align: center;
-    font-family: Georgia, Times New Roman, serif;
-    letter-spacing: -0.03em;
-    a {
-      text-decoration: none;
-      color: black;
+    text-decoration: none;
+    color: #6c90b2;
+    &:hover {
+      color: #83ace9;
     }
   }
 
-  h2 {
-    font-size: 25px;
-    line-height: 28px;
-    font-weight: normal;
+  #blog-post-listing {
+    h4 {
+      font-weight: bold;
+      display: block;
+      line-height: 20px;
+    }
     text-align: center;
-    color: #999;
-    font-family: Georgia, Times New Roman, serif;
-    letter-spacing: -0.03em;
+    article {
+      padding-bottom: 17px;
+    }
   }
-
-
-  h3 {
-    margin-top: 5px;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: normal;
-    text-align: center;
-    color: #aaa;
-    font-family: Georgia, Times New Roman, serif;
-    letter-spacing: -0.03em;
-  }
-
-
-  h4 {
-    font-size: 17px;
-    font-weight: normal;
-    font-family: Georgia, Times New Roman, serif;
-    letter-spacing: -0.03em;
-  }
-
 }
-
 
 article {
   h3 {
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #666;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #666;
   }
 
  h2 {
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: 27px;
-  color: #333;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #333;
   }
 
   header {
-    h4 {
-      display: inline-block;
-    }
     time {
-      display: inline-block;
       padding-left: 10px;
       font-size: 80%;
       color: #aaa;
       font-style: italic;
     }
   }
-
-  aside.note {
-    background: #fff url(/images/note.gif) no-repeat -5px -5px;
-  }
-
-  aside.caution {
-    background: #fff url(/images/caution.gif) no-repeat -5px -5px;
-  }
-
-  aside.tip {
-    background: #fff url(/images/tip.gif) no-repeat -5px -5px;
-  }
-
 }
 
 article.complete {
@@ -122,12 +87,10 @@ article.complete {
     text-align: center;
     margin-bottom: 30px;
     h1 {
-      font-size: 35px;
       margin-bottom: 15px;
     }
     h2 {
       text-align: center;
-      font-size: 25px;
       padding: 0px;
     }
     time {
@@ -143,17 +106,26 @@ article.complete {
 
 
 footer {
-  @include column($blueprint-grid-columns);
   margin-top: 40px;
   nav {
     @include horizontal-lists;
     text-align: center;
-    ul {
-      @include cross-browser-inline-block;
-      li {
-      }
+    a {
+      padding: 0px 2px 8px 2px;
     }
   }
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+em {
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 35px;
 }
 
 #disqus_thread {

@@ -14,10 +14,11 @@ body {
     color: #ccc;
     padding-top: 20px;
     padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 
   #brents-blog {
-    padding-top: 45px;
+    padding-top: 25px;
 
     h1 {
       text-align: center;
@@ -47,10 +48,11 @@ body {
     h4 {
       font-weight: bold;
       display: block;
+      line-height: 20px;
     }
     text-align: center;
     article {
-      padding-bottom: 15px;
+      padding-bottom: 17px;
     }
   }
 }
@@ -108,10 +110,8 @@ footer {
   nav {
     @include horizontal-lists;
     text-align: center;
-    ul {
-      @include cross-browser-inline-block;
-      li {
-      }
+    a {
+      padding: 0px 2px 8px 2px;
     }
   }
 }
