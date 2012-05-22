@@ -145,16 +145,15 @@ hr {
 
 code {
   border: solid 1px #CCC;
-  // background-color: #EEE;
   background-color: #2b2b2b;
   font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
   font-size: 15px;
   padding: 0 3px;
+  overflow-x: scroll;
 }
 
 pre code {
   display: block;
   background-color: #2b2b2b;
-  // background-color: #EEE;
   padding: 5px 7px;
 }
