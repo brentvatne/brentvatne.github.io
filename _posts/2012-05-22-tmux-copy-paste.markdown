@@ -35,7 +35,7 @@ bind p run "tmux paste-buffer"
 
 Now when you select text with your cursor in Tmux, if you press prefix
 + y afterwards it will copy the text to your OSX clipboard. prefix
-  + b will paste from your Tmux buffer, and &#8984; + V will paste from
+  + p will paste from your Tmux buffer, and &#8984; + V will paste from
 your OSX clipboard. A perfect solution would copy the text to the OSX
 clipboard without requiring any Tmux commands to be executed by the
 user, but I have yet to find a way to do this without a [constantly
