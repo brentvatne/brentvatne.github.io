@@ -24,10 +24,10 @@ _Links to my course work:_<br/>
 [https://github.com/brentvatne/caldo](https://github.com/brentvatne/caldo) <br/>
 [https://github.com/brentvatne/s10-edu](https://github.com/brentvatne/s10-edu) <br/>
 [https://github.com/brentvatne/s10-int](https://github.com/brentvatne/s10-int) <br/>
-[https://github.com/jordanbyron/mission_of_mercy/pull/71](https://github.com/jordanbyron/mission_of_mercy/pull/71)
+[https://github.com/jordanbyron/mis...](https://github.com/jordanbyron/mission_of_mercy/pull/71)
 
 _Entrance exam problems:_<br/>
-[https://github.com/brentvatne/chess-validator](https://github.com/brentvatne/chess-validator) <br/>
-[https://github.com/brentvatne/sixdegrees](https://github.com/brentvatne/sixdegrees)
+[https://github.com/brentvatne/ches...](https://github.com/brentvatne/chess-validator) <br/>
+[https://github.com/brentvatne/sixd...](https://github.com/brentvatne/sixdegrees)
 
 
