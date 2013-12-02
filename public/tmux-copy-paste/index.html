@@ -10,7 +10,7 @@
     <meta name="language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Ceremonial first post</title>
+    <title>Copy and paste in Tmux on OSX</title>
     <script type="text/javascript" src="http://use.typekit.com/zek4ano.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="/css/screen.css" />
@@ -42,22 +42,46 @@
   <article class="complete">
     <header>
       <hgroup>
-        <h1>Ceremonial first post</h1>
+        <h1>Copy and paste in Tmux on OSX</h1>
         <h2><a href="/">Brent Vatne</a></h2>
-        <time>24 September 2011</time>
+        <time>22 May 2012</time>
       </hgroup>
     </header>
 
     <section class="blog-post-body">
-      <p>Took a couple hours today to set up this simple blog powered by Jekyll
-(for static site generation in Ruby) and Disqus for comments.</p>
+      <p>After a month of using <a href="http://tmux.sourceforge.net/">Tmux</a> I can safely say that
+I really love how it organizes my workflow. If you haven't used Tmux before, I
+highly recommend <a href="http://pragprog.com/book/bhtmux/tmux">Brian Hogan's book</a>. I
+have only read the first few chapters, and that was enough for me to get going
+and be more productive in Tmux and terminal VIM than I ever was with MacVim.</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="c1">#ruby code goes here</span>
-<span class="nb">puts</span> <span class="s2">&quot;hello world&quot;</span>
+<p>That all said, it didn't take long before I ran into a potentially showstopping issue
+with Tmux on Mac OSX: copying text within Tmux does not copy it to the OSX
+clipboard.  Luckily, smart people have toiled over this problem and come up with
+a good solution. Here is what I did:</p>
+
+<h3>Install <a href="https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/">reattach-to-user-namespace</a> through <a href="http://mxcl.github.com/homebrew/">homebrew</a></h3>
+
+<div class="highlight"><pre><code class="bash">brew install reattach-to-user-namespace
 </code></pre></div>
 
 
+<h3>Open tmux.conf and paste the following lines</h3>
 
+<div class="highlight"><pre><code class="bash"><span class="nb">set</span>-option -g default-command <span class="s2">&quot;reattach-to-user-namespace -l zsh&quot;</span>
+<span class="nb">bind </span>y run <span class="s2">&quot;tmux save-buffer - | reattach-to-user-namespace pbcopy&quot;</span>
+<span class="nb">bind </span>p run <span class="s2">&quot;tmux paste-buffer&quot;</span>
+</code></pre></div>
+
+
+<p>Now when you select text with your cursor in Tmux, if you press prefix
++ y afterwards it will copy the text to your OSX clipboard. prefix
+  + p will paste from your Tmux buffer, and &#8984; + V will paste from
+your OSX clipboard. A perfect solution would copy the text to the OSX
+clipboard without requiring any Tmux commands to be executed by the
+user, but I have yet to find a way to do this without a <a href="http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x">constantly
+polling shell
+script</a>.</p>
 
     </section>
   </article>

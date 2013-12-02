@@ -2,14 +2,11 @@
 @import "base";
 @import "layout";
 @import "skeleton";
-
-@import "partials/base";
-
 @import "typography";
 
 body {
-
   margin: 0 auto;
+
   h4 {
     color: #ccc;
     padding-top: 20px;
@@ -92,6 +89,7 @@ article.complete {
     h2 {
       text-align: center;
       padding: 0px;
+      margin-top: 0.75em;
     }
     time {
       margin: 5px 0px 0px 0px;
@@ -108,7 +106,15 @@ article.complete {
 footer {
   margin-top: 40px;
   nav {
-    @include horizontal-lists;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+      }
+    }
     text-align: center;
     a {
       padding: 0px 2px 8px 2px;
