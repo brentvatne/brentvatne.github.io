@@ -39,7 +39,7 @@ rear-view that dangled by wire, at my request. I drove to the next
 exit and took a breather in a fried-chicken joint, where I absent mindedly left my
 cell-phone-wallet (a single point of failure, I knew it would bite me
 one day but just so damned convenient). Traffic for the rest of the drive back was
-stop-and-go until the LA itself.
+stop-and-go until LA itself.
 
 So Noelia's car is damaged, although not irreparably so, my Sunday was
 spent almost entirely in a car, and I'm short a phone and a couple of plastic cards.
