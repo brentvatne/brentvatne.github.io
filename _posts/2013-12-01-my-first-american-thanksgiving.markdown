@@ -43,6 +43,6 @@ stop-and-go until LA itself.
 
 So Noelia's car is damaged, although not irreparably so, my Sunday was
 spent almost entirely in a car, and I'm short a phone and a couple of plastic cards.
-It could have been so much worse. This Thankiving Weekend, my first ever in America,
-I am thankful that Noleia, Cynthia, and myself were fortunate enough to emerge
+It could have been so much worse. This Thanksgiving Weekend, my first ever in America,
+I am thankful that Noelia, Cynthia, and myself were fortunate enough to emerge
 from that stretch of highway in good health.
