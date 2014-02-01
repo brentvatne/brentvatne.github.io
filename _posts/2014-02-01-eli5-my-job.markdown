@@ -47,7 +47,8 @@ better business decisions.
 I write code that makes the interface work and look pretty. But I also
 write the code that makes the applications remember the information you
 enter and be able to present it back for you next time you visit the
-site. The interface is known as the front-end, and the other piece is
+site, and perform calculations and generate reports based off of it. The
+interface is known as the front-end, and the other piece is
 known as the back-end. The back-end is a server and usually a database
 (which is just another program that is good at store and retrieving data).
 
