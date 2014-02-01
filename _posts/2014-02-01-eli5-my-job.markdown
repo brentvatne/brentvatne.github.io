@@ -1,0 +1,87 @@
+---
+layout: post
+title: ELI5: What does Brent do for a living?
+description: ELI5 is an abbreviation used on Reddit for "Explain Like I'm Five"
+---
+
+For the past year or so I have been fortunate enough to be a Software
+Developer at Madriska, Inc - a software consultancy that has been
+developing web-based business software since 2005. I work typically work in
+Vancouver, and my co-workers are located and work in Chicago and New
+Haven. It is a dream job - I have an incredible amount of autonomy and I
+get to work with some of the most kind, inspiring, and clever people
+that I know (Brad, Jordan - you guys are amazing). Our customers run
+successful businesses and are fun to work with.
+
+To most people I know, this description provides little insight to what I
+actually do on a day-to-day basis beyond hunch over a computer and drink coffee.
+Software development, especially in the context of a software consultancy, is
+surprisingly difficult to explain to an outsider, but I'm going to give it a
+shot. This is more of an ELI15 than an ELI5 (thanks Caleb), because I
+regrettably do not think I'm capable of articulating this information in a way
+that could be understood by a five year old.
+
+### What does a software developer do?
+Software is _everywhere_ and there is therefore huge variety in the work that
+developers do - the apps on your phone, the system you use for paying your bills,
+Facebook, Google, YouTube, your digital watch, genome sequencing/analysis tools,
+the dashboard in your car, inventory management and accounting systems
+that power businesses, your favorite online store, and the software
+that makes it possible to explore Mars with the Curiosity Rover.
+
+Naturally, as the application changes there is also a great deal of specific domain
+knowledge that will be required to effectively write software - you
+can't create an accounting system if you do not know what debits and
+credits are, and you certainly cannot write write software to control a
+Rover on Mars from Earth unless you understand.. well.. a lot of things.
+So beyond technical expertise, developers also learn a lot about
+specific topics that their software is written for.
+
+The software I typically work on is the kind of thing that you would
+look at through a web browser. Sometimes I add additional functionality to an
+online store, such as giving customer service representatives the ability to
+place orders on behalf of customers. Often, the work I do is not publicly
+visible: many systems we work on are used internally to help our customers make
+better business decisions.
+
+I write code that makes the interface work and look pretty. But I also
+write the code that makes the applications remember the information you
+enter and be able to present it back for you next time you visit the
+site. The interface is known as the front-end, and the other piece is
+known as the back-end. The back-end is a server and usually a database
+(which is just another program that is good at store and retrieving data).
+
+### So what is a software consultancy?
+Our customers are businesses that have or want to create web applications and
+need some help planning, building from scratch, maintaining, and/or updating
+them to keep up with what the business needs the applications to do.
+
+The level of help we provide can vary: we can be the only developers on
+their applications, either because the needs of the application are too few
+to require a full-time developer or the business decides they do not want
+to dedicate a team inside of their company to it, or we can just handle
+tasks that the businesses' existing team does not have time to work on
+or require special knowledge that we have and they do not.
+
+### How do you do this from a different country than your co-workers?
+What I do is called 'remote work' - myself and my co-workers all work from
+different cities across North America, often in our own homes. Thanks to the
+work of great software developers before us, we have access to many incredible
+applications they made which allow us to talk with each other and with our
+customers at any time, either by text or video/voice. For example, Skype
+and Google Hangouts. We also have places where we can list the tasks that we
+need to accomplish, discuss our progress on them, and share all of that
+information with the customers - who are, of course, also free to comment on
+the tasks. The specific tool we use is called Trello. We upload all of our code
+to a website that allows us to see what other people have done and
+comment on the code. This website is called Github.
+
+## Reflection
+This exercise was extremely difficult for me, and I still don't think I
+did a very good job of explaining my work. If anyone has seen, written, or
+think you can write a simple and effective explanation of software development
+& the software consultancy business, send it over and I'll update this with links!
+
+If you're not a software developer, why not give this exercise a try -
+explain enough of your job to do justice to its complexities, write so that it
+can be understood by anyone, and do it in as few words as possible.
