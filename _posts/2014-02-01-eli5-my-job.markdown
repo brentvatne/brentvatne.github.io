@@ -76,7 +76,7 @@ the tasks. The specific tool we use is called Trello. We upload all of our code
 to a website that allows us to see what other people have done and
 comment on the code. This website is called Github.
 
-## Reflection
+### Reflection
 This exercise was extremely difficult for me, and I still don't think I
 did a very good job of explaining my work. If anyone has seen, written, or
 think you can write a simple and effective explanation of software development
