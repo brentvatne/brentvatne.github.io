@@ -68,7 +68,7 @@ We do not have our own software products that we sell - our revenues are
 earned by working on applications for our customers.
 
 ### How do you do this from a different country than your co-workers?
-What I do is called 'remote work' - myself and my co-workers all work from
+What I do is called _remote work_ - myself and my co-workers all work from
 different cities across North America, often in our own homes. Thanks to the
 work of great software developers before us, we have access to many incredible
 applications they made which allow us to talk with each other and with our
