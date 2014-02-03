@@ -32,7 +32,7 @@ that makes it possible to explore Mars with the Curiosity Rover.
 Naturally, as the application changes there is also a great deal of specific domain
 knowledge that will be required to effectively write software - you
 can't create an accounting system if you do not know what debits and
-credits are, and you certainly cannot write write software to control a
+credits are, and you certainly cannot write software to control a
 Rover on Mars from Earth unless you understand.. well.. a lot of things.
 So beyond technical expertise, developers also learn a lot about
 specific topics that their software is written for.
