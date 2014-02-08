@@ -13,7 +13,7 @@ I had thought that the only way to do it was to, well, delete
 everything.
 
 Using Gmail it is incredibly easy to clear out your inbox without losing
-your previous emails. Search for `label:inbox`, select everything on the page,
+your previous emails. Search for _label:inbox_, select everything on the page,
 then click "Select all conversations that match this search" and click Archive.
 This will move all of your email out of your Inbox and into the All Mail tab,
 where they will forever remain. It's that easy!
