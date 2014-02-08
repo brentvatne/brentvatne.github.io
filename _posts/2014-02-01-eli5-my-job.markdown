@@ -52,6 +52,10 @@ interface is known as the front-end, and the other piece is
 known as the back-end. The back-end is a server and usually a database
 (which is just another program that is good at store and retrieving data).
 
+That's not to say that I just write code all day - a large part of my
+job is speaking with customers to understand what problem they need the
+software to solve, then designing and pitching software solutions to them.
+
 ### So what is a software consultancy?
 Our customers are businesses that have or want to create web applications and
 need some help planning, building from scratch, maintaining, and/or updating
