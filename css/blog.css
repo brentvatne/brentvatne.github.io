@@ -1,0 +1,128 @@
+/* Small screens (default) */
+html { font-size; 105%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amaranth';
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+html {
+  font-family: 'Cambo';
+  letter-spacing: 0.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.home-page-title {
+  margin: 1em 0 0.5em 0;
+}
+
+.home-page-title a {
+
+}
+
+.article-preview-slide {
+  padding: 15px 0px;
+}
+
+.article-preview-slide time {
+  color: #ccc;
+  font-size: 90%;
+}
+
+.article-preview-slide h4 {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-size: 200%;
+}
+
+.article-preview-slide h4 a {
+
+}
+
+.article-preview-slide .article-text-preview {
+
+}
+
+.article-header-splash {
+
+}
+
+.article-header-splash {
+  padding: 15px 0px;
+}
+
+.article-header-splash time {
+  color: #ccc;
+  font-size: 90%;
+}
+
+.article-header-splash h1 {
+  margin: 0;
+  font-size: 200%;
+}
+
+.finally-inbox-zero h4 a {
+  /* color: red; */
+}
+
+.eli5-my-job h4 a {
+  /* color: red; */
+}
+
+.american-thanksgiving h4 a {
+  /* color: red; */
+}
+
+.tmux-copy-paste {
+
+}
+
+.mendicant-university {
+
+}
+
+.first-post {
+
+}
+
+footer {
+  margin-top: 2.25em;
+  margin-bottom: 1em;
+}
+
+footer a {
+  display: block;
+}

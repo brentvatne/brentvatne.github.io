@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My first American Thanksgiving
+class: american-thanksgiving
 description: And also my first car accident.
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning at Mendicant University
+class: mendicant-university
 description: About my experiences at the school during January, 2012.
 ---
 

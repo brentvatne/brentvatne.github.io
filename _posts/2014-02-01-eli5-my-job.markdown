@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ELI5 What does Brent do for a living?
+class: eli5-my-job
 description: ELI5 is an abbreviation used on Reddit which stands for Explain Like I'm Five.
 ---
 

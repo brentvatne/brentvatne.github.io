@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>{{ page.title }}</title>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="/css/screen.css" />
-    <link rel="stylesheet" href="/css/railscasts.css" />
-    <script type="text/javascript">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link rel="stylesheet" href="/css/syntax.css" />
 
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-10128745-7']);
       _gaq.push(['_trackPageview']);
@@ -25,7 +25,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
 
     <!--[if lt IE 9]>
@@ -35,21 +34,17 @@
 
   <body>
     <div class="container">
-      <div class="sixteen columns">
-        <section id="brents-blog">
-          {{ content }}
-        </section>
+      <div class="column">
+        {{ content }}
       </div>
 
-      <div class="sixteen columns">
-        <footer>
-          <nav>
-            <a href="http://www.github.com/brentvatne/">github.com/brentvatne</a>
-            <a href="http://www.twitter.com/notbrent/">@notbrent</a>
-            <a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a>
-          </nav>
-        </footer>
-      </div>
+      <footer>
+        <nav>
+          <a href="http://www.twitter.com/notbrent/">@notbrent</a>
+          <a href="http://www.github.com/brentvatne/">github.com/brentvatne</a>
+          <a href="mailto:brentvatne@gmail.com">brentvatne@gmail.com</a>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>

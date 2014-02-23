@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Finally at Inbox Zero
+class: finally-inbox-zero
 description: And how you can get and stay there with Gmail
 ---
 

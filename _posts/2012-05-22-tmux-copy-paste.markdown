@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Copy and paste in Tmux on OSX
+class: tmux-copy-paste
 description: How to move your Tmux copy buffer to the Mac OSX clipboard
 ---
 
