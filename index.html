@@ -4,22 +4,26 @@ title: Brent
 ---
 
 <header>
-  <h1 class="home-page-title"><a href="/">{{ page.title }}</a></h1>
+  <div class="container">
+    <h1 class="home-page-title"><a href="/">{{ page.title }}</a></h1>
+  </div>
 </header>
 
 <section id="blog-post-listing">
   {% for post in site.posts limit:10 %}
     <article class="{{ post.class }} article-preview-slide">
-      <header>
-        <hgroup>
-          <time>{{ post.date | date_to_long_string }}</time>
-          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        </hgroup>
-      </header>
+      <div class="container">
+        <header>
+          <hgroup>
+            <time>{{ post.date | date_to_long_string }}</time>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          </hgroup>
+        </header>
 
-      <section class="article-text-preview">
-        {{ post.description }}
-      </section>
+        <section class="article-text-preview">
+          {{ post.description }}
+        </section>
+      </container>
     </article>
   {% endfor %}
 </section>
