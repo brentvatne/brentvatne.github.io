@@ -63,9 +63,10 @@ p {
 }
 
 .article-preview-slide h4 {
-  margin-top: 0;
-  margin-bottom: 0.2em;
   font-size: 200%;
+  line-height: 100%;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .article-preview-slide h4 a {
