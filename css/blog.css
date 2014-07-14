@@ -34,8 +34,7 @@ h3 {
 }
 
 html {
-  font-family: 'Droid Serif', sans-serif;
-  letter-spacing: 0.5;
+  font-family: 'Alegreya Sans';
 }
 
 a {
@@ -45,6 +44,7 @@ a {
 
 p {
   line-height: 1.4em;
+  font-family: 'Alegreya Sans';
 }
 
 .home-page-title {
@@ -84,7 +84,7 @@ p {
 }
 
 .article-header-splash {
-  padding: 15px 0px;
+  padding: 15px 0px 0px 0px;
 }
 
 .article-header-splash time {
