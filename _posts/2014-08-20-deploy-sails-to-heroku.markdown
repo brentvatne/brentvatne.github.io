@@ -2,7 +2,7 @@
 layout: post
 title: Deploy a new Sails.js app to Heroku
 class: sails-js-heroku
-description: It's not quite as easy as deploying a Rails app.
+description: It's not quite as easy as deploying a Rails app, but it's still easy.
 ---
 
 ### Pre-requisites
@@ -13,9 +13,9 @@ description: It's not quite as easy as deploying a Rails app.
 
 - Generate your project, cd into the directory: `sails new url-shortener && cd url-shortener`
 
-- Add a Procfile.
+- Create a Procfile `touch Procfile` then open it and add `web: node app.js`.
 
-- Commit everything to git.
+- Commit everything to git. `git init && git add . && git commit -m 'Initial commit'`
 
 - Create an app for the project on Heroku: `heroku create brents-url-shortener`
 
@@ -35,7 +35,6 @@ and all of our data will be wiped whenever the app restarts.
 - Heroku automatically creates an environment variable that points to the MongoHQ database when you install the add-on. So just copy the following into `config/connections.js`:
 
   {% highlight javascript %}
-
   productionMongoHqDb: {
     adapter: 'sails-mongo',
     url: process.env.MONOGHQ_URL
@@ -63,7 +62,6 @@ Let's use Redis.
 - Copy the following into both `config/sessions.js` and `config/sockets.js`, within the `export` object.
 
   {% highlight javascript %}
-
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
   db: process.env.REDIS_DB,
@@ -73,7 +71,6 @@ Let's use Redis.
 - Now so that we can still run our app locally in development, let's make our local environment use the memory store. Paste this into the export object in `config/locals.js`
 
   {% highlight javascript %}
-
   session: {
     adapter: 'memory'
   },
