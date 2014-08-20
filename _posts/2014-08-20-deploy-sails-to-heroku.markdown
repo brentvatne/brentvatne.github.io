@@ -33,8 +33,10 @@ and all of our data will be wiped whenever the app restarts.
 - Install the `sails-mongo` adapter: `npm install sails-mongo --save`.
 
 - Heroku automatically creates an environment variable that points to the MongoHQ database when you install the add-on. So just copy the following into `config/connections.js`:
+
   {% highlight javascript %}
-    productionMongoHqDb: {
+
+  productionMongoHqDb: {
     adapter: 'sails-mongo',
     url: process.env.MONOGHQ_URL
   }
@@ -61,7 +63,8 @@ Let's use Redis.
 - Copy the following into both `config/sessions.js` and `config/sockets.js`, within the `export` object.
 
   {% highlight javascript %}
-    host: process.env.REDIS_HOST,
+
+  host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
   db: process.env.REDIS_DB,
   pass: process.env.REDIS_PASSWORD
@@ -70,7 +73,8 @@ Let's use Redis.
 - Now so that we can still run our app locally in development, let's make our local environment use the memory store. Paste this into the export object in `config/locals.js`
 
   {% highlight javascript %}
-    session: {
+
+  session: {
     adapter: 'memory'
   },
 
