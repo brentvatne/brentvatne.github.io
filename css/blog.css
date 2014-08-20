@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5 {
  font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
+ol, ul {
+  padding-left: 18px !important;
+}
+
 h3 {
   margin-top: 1.5em;
   font-size: 150%;

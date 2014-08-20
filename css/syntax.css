@@ -2,9 +2,9 @@
 .c { color: #bc9458; font-style: italic } /* Comment */
 .err { color: #ffc66d } /* Error */
 .k { color: #cc7833 } /* Keyword */
-.n { color: #f0f0f0 } /* Name */
-.o { color: #f0f0f0 } /* Operator */
-.p { color: #f0f0f0 } /* Punctuation */
+.n { color: #23667D } /* Name */
+.o { color: #23667D } /* Operator */
+.p { color: #23667D } /* Punctuation */
 .cm { color: #bc9458; font-style: italic } /* Comment.Multiline */
 .cp { color: #bc9458; font-style: italic } /* Comment.Preproc */
 .c1 { color: #bc9458; font-style: italic } /* Comment.Single */
@@ -22,17 +22,17 @@
 .nc { color: #ffc66d } /* Name.Class */
 .no { color: #6d9cbe } /* Name.Constant */
 .nd { color: #da4939 } /* Name.Decorator */
-.ni { color: #f0f0f0 } /* Name.Entity */
-.ne { color: #f0f0f0 } /* Name.Exception */
+.ni { color: #23667D } /* Name.Entity */
+.ne { color: #23667D } /* Name.Exception */
 .nf { color: #ffc66d } /* Name.Function */
-.nl { color: #f0f0f0 } /* Name.Label */
-.nn { color: #f0f0f0 } /* Name.Namespace */
-.nx { color: #f0f0f0 } /* Name.Other */
-.py { color: #f0f0f0 } /* Name.Property */
+.nl { color: #23667D } /* Name.Label */
+.nn { color: #23667D } /* Name.Namespace */
+.nx { color: #23667D } /* Name.Other */
+.py { color: #23667D } /* Name.Property */
 .nt { color: #e8bf6a } /* Name.Tag */
-.nv { color: #f0f0f0 } /* Name.Variable */
+.nv { color: #23667D } /* Name.Variable */
 .ow { color: #cc7833 } /* Operator.Word */
-.w { color: #f0f0f0 } /* Text.Whitespace */
+.w { color: #23667D } /* Text.Whitespace */
 .mf { color: #a5c261 } /* Literal.Number.Float */
 .mh { color: #a5c261 } /* Literal.Number.Hex */
 .mi { color: #a5c261 } /* Literal.Number.Integer */
@@ -48,8 +48,8 @@
 .sr { color: #a5c261 } /* Literal.String.Regex */
 .s1 { color: #a5c261 } /* Literal.String.Single */
 .ss { color: #a5c261 } /* Literal.String.Symbol */
-.bp { color: #f0f0f0 } /* Name.Builtin.Pseudo */
-.vc { color: #f0f0f0 } /* Name.Variable.Class */
-.vg { color: #f0f0f0 } /* Name.Variable.Global */
-.vi { color: #f0f0f0 } /* Name.Variable.Instance */
+.bp { color: #23667D } /* Name.Builtin.Pseudo */
+.vc { color: #23667D } /* Name.Variable.Class */
+.vg { color: #23667D } /* Name.Variable.Global */
+.vi { color: #23667D } /* Name.Variable.Instance */
 .il { color: #a5c261 } /* Literal.Number.Integer.Long */
