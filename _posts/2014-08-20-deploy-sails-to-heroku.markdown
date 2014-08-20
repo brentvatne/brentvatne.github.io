@@ -41,7 +41,7 @@ and all of our data will be wiped whenever the app restarts.
   }
   {% endhighlight %}
 
-- Change the connection used for models in the production environment to productionMongoHqDb in `config/env/production.js`.
+- Change the connection used for models in the production environment to `productionMongoHqDb` in `config/env/production.js`.
 
 ### Use Redis for the session and socket store
 
