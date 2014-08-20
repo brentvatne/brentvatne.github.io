@@ -46,6 +46,14 @@ a {
   text-decoration: none;
 }
 
+article a {
+  text-decoration: underline;
+}
+
+article a:hover {
+  color: #1d4689;
+}
+
 p {
   line-height: 1.4em;
   font-family: 'Alegreya Sans';

@@ -53,3 +53,18 @@
 .vg { color: #23667D } /* Name.Variable.Global */
 .vi { color: #23667D } /* Name.Variable.Instance */
 .il { color: #a5c261 } /* Literal.Number.Integer.Long */
+
+pre {
+  padding-top: 20px;
+  background: #F4F4F4;
+  overflow-y: hidden;
+}
+
+code {
+  padding: 3px 7px 3px 7px;
+  margin: 0px 3px;
+  background: #F4F4F4;
+  font-size: 0.85em;
+  border-radius: 3px;
+  color: #5A6376;
+}

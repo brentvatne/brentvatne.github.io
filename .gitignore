@@ -9,3 +9,4 @@ doc/
 .DS_Store
 .sass-cache/*
 public/*
+_site/*
