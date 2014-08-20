@@ -54,6 +54,10 @@ article a:hover {
   color: #1d4689;
 }
 
+h4 a {
+  text-decoration: none !important;
+}
+
 p {
   line-height: 1.4em;
   font-family: 'Alegreya Sans';
