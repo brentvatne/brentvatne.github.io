@@ -17,6 +17,16 @@ description: It's not quite as easy as deploying a Rails app, but it's still eas
 
 - Commit everything to git. `git init && git add . && git commit -m 'Initial commit'`
 
+- Add a node version to your `package.json`. The current stable version
+  is `0.10.x`, so we need add:
+
+  {% highlight javascript %}
+ "engines": {
+     "node": "0.10.x"
+   },
+  {% endhighlight %}
+
+
 - Create an app for the project on Heroku: `heroku create brents-url-shortener`
 
 - Set the app environment to production: `heroku config:set NODE_ENV=production`
@@ -32,12 +42,12 @@ and all of our data will be wiped whenever the app restarts.
 
 - Install the `sails-mongo` adapter: `npm install sails-mongo --save`.
 
-- Heroku automatically creates an environment variable that points to the MongoHQ database when you install the add-on. So just copy the following into `config/connections.js`:
+- Heroku automatically creates an environment variable that points to the MongoHQ database when you install the add-on. So just copy the following into `config/connections.js` (don't forget to add a trailing comma if you put it before other options):
 
   {% highlight javascript %}
  productionMongoHqDb: {
     adapter: 'sails-mongo',
-    url: process.env.MONOGHQ_URL
+    url: process.env.MONGOHQ_URL
   }
   {% endhighlight %}
 
@@ -50,7 +60,9 @@ Let's use Redis.
 
 - Add the RedisToGo free add-on to the Heroku app: `heroku addons:add redistogo`
 
-- Install the `connect-redis` npm module: `npm install connect-redis@1.4.5 --save-exact`. We specified the version here explicitly because 2.0.0 doesn't seem to work with the current version of Sails.
+- Install the `connect-redis` npm module: `npm install connect-redis@1.4.5 --save-`. We specified the version here explicitly because 2.0.0 doesn't seem to work with the current version of Sails.
+
+- Open `package.json` and change `"connect-redis": "^1.4.5",` to `"connect-redis": "1.4.5"` (just remove the `^`).
 
 - Run `heroku config` again and this time we need to pull some information out of the `REDISTOGO_URL` environment variable. We need to set various other variables on Heroku from pieces of this one.
 
@@ -63,13 +75,14 @@ Let's use Redis.
 
   {% highlight javascript %}
 
- host: process.env.REDIS_HOST,
+ adapter: 'redis',
+  host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
   db: process.env.REDIS_DB,
   pass: process.env.REDIS_PASSWORD
   {% endhighlight %}
 
-- Now so that we can still run our app locally in development, let's make our local environment use the memory store. Paste this into the export object in `config/locals.js`
+- Now so that we can still run our app locally in development, let's make our local environment use the memory store. Paste this into the export object in `config/local.js`
 
   {% highlight javascript %}
 
