@@ -103,7 +103,8 @@ many ways since then, hence this blog post.
 
 A repository where all of the above changes have been made can be found
 at
-[brentvatne/url-shortener](https://github.com/brentvatne/url-shortener).
+[brentvatne/url-shortener](https://github.com/brentvatne/url-shortener)
+or [s.brentvatne.ca/src](http://s.brentvatne.ca/src).
 And for good measure, a (slightly) shortened url to this article, backed
 by the above Sails.js sample app hosted on Heroku, is available here:
 [s.brentvatne.ca/sails-heroku](http://s.brentvatne.ca/sails-heroku)
