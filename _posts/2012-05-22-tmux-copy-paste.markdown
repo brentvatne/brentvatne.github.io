@@ -19,24 +19,22 @@ a good solution. Here is what I did:
 ### Install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/) through [homebrew](http://mxcl.github.com/homebrew/)
 
 {% highlight bash %}
-
-brew install reattach-to-user-namespace
-
+ brew install reattach-to-user-namespace
+ 
 {% endhighlight %}
 
 ### Open tmux.conf and paste the following lines
 
 {% highlight bash %}
-
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
-bind p run "tmux paste-buffer"
-
+ set-option -g default-command "reattach-to-user-namespace -l zsh"
+  bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+  bind p run "tmux paste-buffer"
+ 
 {% endhighlight %}
 
-Now when you select text with your cursor in Tmux, if you press prefix
-+ y afterwards it will copy the text to your OSX clipboard. prefix
-  + p will paste from your Tmux buffer, and &#8984; + V will paste from
+Now when you select text with your cursor in Tmux, if you press `prefix + y`
+afterwards it will copy the text to your OSX clipboard. `prefix + p`
+  will paste from your Tmux buffer, and `⌘ + v` will paste from
 your OSX clipboard. A perfect solution would copy the text to the OSX
 clipboard without requiring any Tmux commands to be executed by the
 user, but I have yet to find a way to do this without a [constantly

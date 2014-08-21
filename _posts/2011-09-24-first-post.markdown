@@ -10,7 +10,7 @@ Took a couple hours today to set up this simple blog powered by Jekyll
 
 {% highlight ruby %}
 
-#ruby code goes here
-puts "hello world"
-
+# ruby code goes here
+ puts "hello world"
+ 
 {% endhighlight %}
