@@ -51,7 +51,7 @@ enter and be able to present it back for you next time you visit the
 site, and perform calculations and generate reports based off of it. The
 interface is known as the front-end, and the other piece is
 known as the back-end. The back-end is a server and usually a database
-(which is just another program that is good at store and retrieving data).
+(which is just another program that is good at storing and retrieving data).
 
 That's not to say that I just write code all day - a large part of my
 job is speaking with customers to understand what problem they need the
@@ -60,7 +60,7 @@ software to solve, then designing and pitching software solutions to them.
 ### So what is a software consultancy?
 Our customers are businesses that have or want to create web applications and
 need some help planning, building from scratch, maintaining, and/or updating
-them to keep up with what the business needs the applications to do.
+them to keep up with what the business needs the software to do.
 
 The level of help we provide can vary: we can be the only developers on
 their applications, either because the needs of the application are too few
@@ -76,20 +76,23 @@ earned by working on applications for our customers.
 What I do is called _remote work_ - myself and my co-workers all work from
 different cities across North America, often in our own homes. Thanks to the
 work of great software developers before us, we have access to many incredible
-applications they made which allow us to talk with each other and with our
-customers at any time, either by text or video/voice. For example, Skype
-and Google Hangouts. We also have places where we can list the tasks that we
-need to accomplish, discuss our progress on them, and share all of that
-information with the customers - who are, of course, also free to comment on
-the tasks. The specific tool we use is called Trello. We upload all of our code
-to a website that allows us to see what other people have done and
-comment on the code. This website is called Github.
+applications which allow us to speak with each other and with our
+customers at any time, either by text, video/voice, screen sharing and
+more. For example, Skype, Google Hangouts, ScreenHero and Teamviewer. We
+also have places where we can list the tasks that we need to accomplish,
+discuss our progress on them, and share all of that information with the
+customers - who are, of course, also free to comment on the tasks and
+provide their approval or feedback. The specific tool we use is called
+Trello. We upload all of our code to a website that allows us to see
+what other team members have done to discuss and collaborate on the code.
+This website is called Github.
 
 ### Reflection
 This exercise was extremely difficult for me, and I still don't think I
 did a very good job of explaining my work. If anyone has seen, written, or
-think you can write a simple and effective explanation of software development
-& the software consultancy business, send it over and I'll update this with links!
+thinks they can write a simple and effective explanation of software
+development & the software consultancy business, send it over and I'll
+update this with links!
 
 If you're not a software developer, why not give this exercise a try -
 explain enough of your job to do justice to its complexities, write so that it
