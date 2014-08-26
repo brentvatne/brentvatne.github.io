@@ -7,7 +7,10 @@ description: It's not quite as easy as deploying a Rails app, but it's still eas
 
 ### Pre-requisites
 - Set up a Heroku account, install the command line tool and authenticate through it.
-- Sails `npm install -g sails@0.1.4` (the latest version as of 20/8/14)
+- Sails `npm install -g sails@0.1.4` (the latest version as of 20/8/14).
+  If this fails, you may be using a version of `npm` that just does not
+  work with sails...Make sure your `node` version is `0.10.x` and then
+  do `sudo npm install -g npm@1.4.20` and try again.
 
 ### Basic setup
 

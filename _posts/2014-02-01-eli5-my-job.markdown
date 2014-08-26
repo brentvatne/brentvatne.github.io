@@ -7,7 +7,7 @@ description: ELI5 is an abbreviation used on Reddit which stands for Explain Lik
 
 For the past year or so I have been fortunate enough to be a Software
 Developer at Madriska, Inc - a software consultancy that has been
-developing web-based business software since 2005. I work typically work in
+developing web-based business software since 2005. I typically work in
 Vancouver, and my co-workers are located and work in Chicago and New
 Haven. It is a dream job - I have an incredible amount of autonomy and I
 get to work with some of the most kind, inspiring, and clever people
