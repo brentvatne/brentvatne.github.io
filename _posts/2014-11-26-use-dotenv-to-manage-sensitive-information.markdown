@@ -15,26 +15,26 @@ apps.
 
 Just add `dotenv-rails` to your Gemfile
 
-```ruby
-# In Gemfile
-gem 'dotenv-rails', groups: [:development, :test]
-```
+  {% highlight ruby %}
+ # In Gemfile
+   gem 'dotenv-rails', groups: [:development, :test]
+  {% endhighlight %}
 
 Create a file named `.env` in your project root and set any variable in it
 like so:
 
-```ruby
-# In .env
-VARIABLE_NAME=some-value-here
-```
+  {% highlight bash %}
+ VARIABLE_NAME=some-value-here
+  {% endhighlight %}
+
 
 And lastly, add this to your .gitignore so that you do not commit your
 super secret credentials.
 
-```ruby
-# In .gitignore
-.env
-```
+  {% highlight bash %}
+ # In .gitignore
+   .env
+  {% endhighlight %}
 
 If you are using Heroku, setting the environment variables on your
 server is as simple as `heroku config:set VARIABLE_NAME=value`, or you
