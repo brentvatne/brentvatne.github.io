@@ -17,7 +17,7 @@ Just add `dotenv-rails` to your Gemfile
 
   {% highlight ruby %}
   # In Gemfile
-   gem 'dotenv-rails', groups: [:development, :test]
+  gem 'dotenv-rails', groups: [:development, :test]
   {% endhighlight %}
 
 Create a file named `.env` in your project root and set any variable in it
@@ -33,7 +33,7 @@ super secret credentials.
 
   {% highlight bash %}
   # In .gitignore
-   .env
+  .env
   {% endhighlight %}
 
 If you are using Heroku, setting the environment variables on your
