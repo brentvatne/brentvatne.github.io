@@ -145,3 +145,21 @@ footer {
 footer a {
   display: block;
 }
+
+.blog-post-static-header {
+  width: 100%;
+  background: black;
+  height: 50px;
+}
+
+.back-home-link {
+  color: rgba(255,255,255,1);
+  line-height: 50px;
+  vertical-align: middle;
+  opacity: 0.6;
+  transition: opacity 0.5s linear;
+}
+
+.back-home-link:hover {
+  opacity: 1;
+}
