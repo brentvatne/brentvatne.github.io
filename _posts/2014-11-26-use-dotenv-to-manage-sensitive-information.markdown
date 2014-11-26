@@ -16,7 +16,6 @@ apps.
 Just add `dotenv-rails` to your Gemfile
 
   {% highlight ruby %}
-  # In Gemfile
   gem 'dotenv-rails', groups: [:development, :test]
   {% endhighlight %}
 
@@ -28,11 +27,10 @@ like so:
   {% endhighlight %}
 
 
-And lastly, add this to your .gitignore so that you do not commit your
+And lastly, add this to your `.gitignore` so that you do not commit your
 super secret credentials.
 
   {% highlight bash %}
-  # In .gitignore
   .env
   {% endhighlight %}
 
