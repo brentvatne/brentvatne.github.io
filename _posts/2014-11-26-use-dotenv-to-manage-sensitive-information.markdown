@@ -16,7 +16,7 @@ apps.
 Just add `dotenv-rails` to your Gemfile
 
   {% highlight ruby %}
- # In Gemfile
+  # In Gemfile
    gem 'dotenv-rails', groups: [:development, :test]
   {% endhighlight %}
 
@@ -24,7 +24,7 @@ Create a file named `.env` in your project root and set any variable in it
 like so:
 
   {% highlight bash %}
- VARIABLE_NAME=some-value-here
+  VARIABLE_NAME=some-value-here
   {% endhighlight %}
 
 
@@ -32,7 +32,7 @@ And lastly, add this to your .gitignore so that you do not commit your
 super secret credentials.
 
   {% highlight bash %}
- # In .gitignore
+  # In .gitignore
    .env
   {% endhighlight %}
 
