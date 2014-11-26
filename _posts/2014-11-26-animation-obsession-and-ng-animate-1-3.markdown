@@ -55,16 +55,20 @@ while catching up on new Angular features. The [demo
 site](http://famo.us/integrations/angular) was just too impressive to ignore.
 I highly recommend checking it out and going through [Famo.us
 University](http://famo.us/university/home/).  Famo.us, in a nutshell,
-abstracts the DOM and Canvas and performs all animations and updates matrix3d
-property to animate elements, based off of values calculated in their own
-rendering engine that runs in JavaScript. It's a bit like React.js and it's use
+abstracts the DOM and Canvas and performs all animations by updating the matrix3d
+property to, based off of values that are calculated in its own rendering engine that runs in JavaScript. It's a bit like React.js and it's use
 of a virtual DOM to minimize actual DOM interactions. Famo.us also provides a
 3d physics engine to give natural, native feeling effects. It's pretty badass
 and I highly recommend checking it out. I modified the Famo.us University
 slideshow tutorial example to get data from my Instagram feed, [check it out
 here on your desktop or mobile
 device](http://brentvatne.ca/famo.us-practice/slideshow-instagram/) - this is
-not particularly complicated to implement.
+not particularly complicated to implement or reason about. It actually
+feels a bit like building a set of React components or Angular
+directives. Listen to one of the Famo.us creators Steve Newcomb [talk
+about Famo.us on JavaScript
+Jabber](https://player.fm/series/javascript-jabber-29651/128-jsj-famous-with-steve-newcomb
+) during your next commute or run!
 
 But I continued to work my way through the ng-europe presentations and was very
 impressed by Matias Niemelä's (of [yearofmoo](yearofmoo.com) fame) [presentation
