@@ -204,12 +204,27 @@ Check out the [example from the yearofmoo ng-europe presentation](https://www.yo
 
 `ng-animate-keep` will "look for elements to persist across views, and then match the element in the second view".
 
-### $animate promises
+### $animate service promises
 
-Rather than using callbacks, you can use the standard Angular way of callbacks.
+Rather than using callbacks, you can now follow the Angular-way of using promises with the $animate service.
 Warning: this promise does not run within the digest cycle, so you need to use
-$scope.$apply if you're going to change some $scope value when the animation is
+`$scope.$apply` if you're going to change some $scope value when the animation is
 completed.
+
+  {% highlight javascript %}
+var promise = $animate.leave(element).then(function() {
+   $scope.$apply(function() {
+      $location.path('/new-page');
+   });
+ }
+
+ // You can also cancel it, which will still run the then callback but
+ // skip the animation
+ skipAnimationButton.on('click', function() {
+   $animate.cancel(promise);
+ });
+  {% endhighlight %}
+
 
 ### $animate.animate
 
