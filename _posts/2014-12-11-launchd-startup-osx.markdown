@@ -2,8 +2,7 @@
 layout: post
 title: launchd for startup scripts on OSX: dark dock, light toolbar
 class: launchd-osx-startup
-description: Learn how to use launchd/launch to write startup scripts,
-and make OSX Yosemite look prettier in the process.
+description: Learn how to use launchd/launch to write startup scripts, and make OSX Yosemite look prettier in the process.
 ---
 
 I held off upgrading to Mavericks because I didn't want to spend the
