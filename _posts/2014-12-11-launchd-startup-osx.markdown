@@ -1,6 +1,6 @@
 ---
 layout: post
-title: launchd for startup scripts on OSX - dark dock, light toolbar
+title: Startup scripts on OSX - dark dock, light toolbar
 class: launchd-osx-startup
 description: Learn how to use launchd/launch to write startup scripts, and make OSX Yosemite look prettier in the process.
 ---
@@ -42,8 +42,9 @@ automatically each time I restart my machine?
 Source: [Wikipedia](http://www.wikiwand.com/en/Launchd)
 
 You've probably used this before when installing tools that you'd like
-to run constantly, such `postgres`. This seems like a good fit. Let's do
-this.
+to run constantly, such `postgres`. This seems like a good fit.
+
+### Let's do this.
 
 - Download [dock.sh](https://gist.github.com/brentvatne/632041136e2fb40527ee) to wherever you'd like
 to store custom startup scripts.
