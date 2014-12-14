@@ -32,45 +32,50 @@ quickly found to be very awkward.
 
 For example:
 
-`Store.fetchRecord(id).then((record) -> $scope.record = record)`
+  {% highlight javascript %}
+    Store.fetchRecord(id).then(function(record) { $scope.record = record })
+  {% endhighlight %}
 
 And I also want to make sure I keep this updated with changes, so:
 
-`Store.on('change', -> $scope.record = Store.getRecord())`
+  {% highlight javascript %}
+    Store.on('change', function(action) { $scope.record = Store.getRecord() })
+  {% endhighlight %}
 
 And `Store.fetchRecord` would look something like:
 
-`$http.get("/records/#{id}").then((response) -> _record = response.data)`
+  {% highlight javascript %}
+    $http.get("/records/#{id}").then(function(response) { _record = response.data})
+  {% endhighlight %}
+
+Lastly, `Store.getRecord` is simply this:
+
+  {% highlight javascript %}
+    return _record;
+  {% endhighlight %}
 
 Easy enough, although it certainly looks a bit complicated for just
-fetching some data. But let's say we were to add on some more robust
-functionality: handling timeouts, errors, rejected auth tokens. Suddenly
-we're loading the store with all sorts of API related concerns. Wouldn't
-it be easier if the store itself only dealt with synchronous operations?
+fetching some data.
+
+But let's say we were to add on some more robust functionality: handling
+timeouts, errors, rejected auth tokens. Suddenly we're loading the store
+with all sorts of API related concerns. Wouldn't it be easier if the
+store only dealt with synchronous operations?
 
 Inspired by [this insightful blogpost called "Async requests with
 React.js and Flux, revisited."](http://www.code-experience.com/async-requests-with-react-js-and-flux-revisited/)
-I tried out at an approach that did just that: isolated asynchronous
-code to API modules, and had stores only contain synchronous code.
+I tried out at an approach that does just that: isolates asynchronous
+code to API modules, and has stores only contain synchronous code,
+described in the following diagram.
 
-- When I want to update the state, for example in a directive
-  controller, I call `Actions.fetchRecord(id)`
-- In that same controller I watch the record for the change event
-  and update when it is changed - essentially the same as above.
-- The API call is performed by the action creator directly, and
-  only when the API call is complete will the action be dispatched,
-  along with the result. The API service can handle exceptional cases /
-  retries.
-- The Store handles the dispatched action by simply persisting the state
-  locally and firing the change event.
-
-But hey, maybe this visual will help:
 ![Diagram showing the above description visually](https://raw.githubusercontent.com/brentvatne/brentvatne.github.io/master/images/angular-flux-async.png)
 
 I still haven't decided whether this is an approach I will continue to
 use, but in the limited experience I've had with it, I find that it
 makes the state of the application easier to reason about. You can try
-doing this yourself with a little library I'm casually working on called
+doing this yourself with a little library I'm casually working on (as
+in YMMV if you choose to use this in production) called
 [angular-flux](https://github.com/brentvatne/angular-flux) - it just
-packages up dispatcher.js and provides some useful utility functions for
-skipping over some of the boilerplate.
+packages up `dispatcher.js` and provides some utility functions for
+reducing some of the boilerplate associated with setting up stores,
+actions and bindings.
