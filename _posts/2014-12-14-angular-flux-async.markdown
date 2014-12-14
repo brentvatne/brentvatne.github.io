@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular.js with Flux: Async Requests
+title: Angular.js with Flux - Async Requests
 class: angular-flux-async
 description: Detailing some experimentation I have done using the Flux architecture pattern with Angular.js
 ---
