@@ -65,7 +65,7 @@ code to API modules, and had stores only contain synchronous code.
   locally and firing the change event.
 
 But hey, maybe this visual will help:
-![Diagram showing the above description visually](https://raw.githubusercontent.com/brentvatne/brentvatne.github.io/master/images/angular-flux-async.png)
+![Diagram showing the above description visually](https://raw.githubusercontent.com/brentvatne/brentvatne.github.io/master/images/async-data-flow.png)
 
 I still haven't decided whether this is an approach I will continue to
 use, but in the limited experience I've had with it, I find that it
