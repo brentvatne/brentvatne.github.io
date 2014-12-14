@@ -44,6 +44,8 @@ html {
 a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 
 article a {
@@ -148,7 +150,7 @@ footer a {
 
 .blog-post-static-header {
   width: 100%;
-  background: black;
+  background: #23241f;
   height: 50px;
   margin-bottom: 20px;
 }
@@ -157,12 +159,37 @@ footer a {
   color: rgba(255,255,255,1);
   line-height: 50px;
   vertical-align: middle;
-  opacity: 0.6;
-  transition: opacity 0.5s linear;
+  font-weight: bold;
+  border-bottom: 0px solid #fff;
+  display: inline-block;
+  position: relative;
 }
 
-.back-home-link:hover {
+.back-home-link-text {
+  display: block;
+  opacity: 0.7;
+}
+
+.back-home-link-underline {
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 12px;
+  transition: all 0.15s ease-out;
+  opacity: 0;
+  width: 0%;
+  left: 50%;
+}
+
+.back-home-link:hover .back-home-link-text {
   opacity: 1;
+}
+
+.back-home-link:hover .back-home-link-underline {
+  width: 100%;
+  opacity: 1;
+  left: 0;
 }
 
 blockquote {
