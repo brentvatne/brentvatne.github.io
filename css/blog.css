@@ -206,3 +206,11 @@ blockquote {
   padding: 10px 30px;
   border-radius: 5px;
 }
+
+.style-class-2014 h2 {
+  margin-bottom: 0;
+}
+
+.style-class-2014 ul {
+  margin-top: 0;
+}
