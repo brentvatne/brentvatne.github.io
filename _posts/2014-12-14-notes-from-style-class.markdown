@@ -5,7 +5,7 @@ class: style-class-2014
 description: My notes from the conference that took place in Vancouver on December 13, 2014.
 ---
 
-# Val Head - All The Right Moves
+## Val Head - All The Right Moves
 - Most designers/developers not trained in motion design
 - Keep interface animations flexible
   - eg: stripe remember me checkbox, if you reverse in the middle it should
@@ -30,7 +30,7 @@ description: My notes from the conference that took place in Vancouver on Decemb
 - animation is a design tool
 - http://valhead.com/ui-animation for more resources
 
-# Alaine Mackenzine - Content strategy for designers
+## Alaine Mackenzine - Content strategy for designers
 - Kristina Halvorson
 - practice of planning, creation, delivery and governance
 - Tools include the following:
@@ -51,7 +51,7 @@ description: My notes from the conference that took place in Vancouver on Decemb
     indicate priority
 - Governance plan
 
-# Vitaly Friedman - Improving smashing mag's performance
+## Vitaly Friedman - Improving smashing mag's performance
 - No diference between being down or too slow
 - "Core HTML and CSS"
   - Priority list for content and styles to define "core" in The
@@ -80,18 +80,18 @@ content) in
 - Improving smashing magazine's performance: a case study - article
   summarizing this talk
 
-# Meredith - Ladies learning code
+## Meredith - Ladies learning code
 - Socrata, Code & Coffee
 - Lots of events coming up in the new year in Vancouver, worth checking
   out perhaps to volunteer or suggest to friends.
 
-# Chelsea Klukas - Human-Centered Design
+## Chelsea Klukas - Human-Centered Design
 - makeFashion
 - Lululemon sweater with hair elastic
 - "Beautiful is playful and disarming"
 - What if David Bowie designed airlines or Lady Gaga Excel?
 
-# Accessibility and CSS
+## Stephanie Hobson - Accessibility and CSS
 - Screen readers - read out in very fast voice
 - High contrast - black background, white text
 - Voice recognition - link based on text, or grid if can't be triggered
@@ -123,5 +123,5 @@ pointer, eg: finger. Fine pointer accurate to pixel, eg: mouse.
   - Makes it better for everyone
 - http://stephaniehobson.ca/
 
-# John Allsopp - Well, how did we get here?
+## John Allsopp - Well, how did we get here?
 - We have a chance to shape the medium of the web.
