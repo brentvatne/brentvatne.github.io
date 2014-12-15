@@ -14,7 +14,7 @@ Add `active_model_serializers` to your `Gemfile`, run `bundle`, of course.
 In `ApplicationController`:
 
   {% highlight ruby %}
- # Disable the root node, eg: {projects: [{..}, {..}]}
+  # Disable the root node, eg: {projects: [{..}, {..}]}
   def default_serializer_options
     {root: false}
   end
@@ -23,7 +23,7 @@ In `ApplicationController`:
 Then in `config/initializers/active_model_serializer.rb`:
 
   {% highlight ruby %}
- # Convert attributes from snake_case to lowerCamelCase
+  # Convert attributes from snake_case to lowerCamelCase
   ActiveModel::Serializer.setup do |config|
     config.key_format = :lower_camel
   end
@@ -35,7 +35,7 @@ Then in `config/initializers/active_model_serializer.rb`:
 Again in `ApplicationController`:
 
   {% highlight ruby %}
- # Convert lowerCamelCase params to snake_case automatically
+  # Convert lowerCamelCase params to snake_case automatically
   before_filter :deep_snake_case_params!
   def deep_snake_case_params!(val = params)
     case val
