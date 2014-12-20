@@ -38,17 +38,20 @@ hard-wired resistance to change get in the way. Looking back on learning
 Angular, I remember feeling the same way as I felt about React, at first - I
 wanted to just stick with Backbone.
 
-> [Stockholm syndrome] is a psychological phenomenon in which hostages express
-> empathy and sympathy and have positive feelings toward their captors,
-> sometimes to the point of defending and identifying with the captors. These
-> feelings are generally considered irrational in light of the danger or risk
-> endured by the victims, who essentially mistake a lack of abuse from their
-> captors for an act of kindness.
+> [Stockholm syndrome] is a psychological phenomenon in which hostages
+> express empathy and sympathy and have positive feelings toward their
+> captors, sometimes to the point of defending and identifying with the
+> captors. These feelings are generally considered irrational ... [and
+> the hostages] mistake a lack of abuse from their captors for an act of
+> kindness.
 
-I believe that a similar phenomenon applies to learning. We defend and identify with
-the knowledge we have and the tools that we use, and mistake the lack of problems
-we run into while applying them as proof of their worth. But try considering these
-questions:
+I'm not suggesting that this is exactly what is happening - clearly no
+technology literally holds us hostage (yet) but I do believe that a
+similar phenomenon to Stockholm syndrome applies to learning new tools.
+We defend and identify with the knowledge we have and the tools that we
+use, and mistake the lack of issues that we run into while applying
+them, due to the accumulated experience in working with & around them, as proof
+of their worth. But try considering these questions:
 
 - How easy is it for someone new to pick it up and get going?
 - Have you been unconsciously avoiding certain types of solutions because
