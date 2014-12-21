@@ -22,11 +22,12 @@ My hesitation to give React serious consideration seems to have been borne out
 of a combination of stubbornness, cynicism, unwillingness to move away from the
 comparatively more established and understood eco-system built around Angular,
 and well, because I actually haven't felt like I have had any issues with
-Angular since I got over the initial learning curve about 10 months ago. I
-I was able to easily avoid performance issues through pagination of lists and
-one-way binding. In the event that something doesn't work quite as expected, I
-find a quick work-around and continue on. I've built up a library of snippets that
-speed up my workflow. I don't find the directive API to be confusing as many do.
+Angular since I got over the initial learning curve.  I was able to
+easily avoid performance issues through pagination of lists and one-way
+binding. In the event that something doesn't work quite as expected, I
+find a quick work-around and continue on. I've built up a library of
+snippets that speed up my workflow. I don't find the directive API to be
+confusing as many do.
 
 So when did I become the kind of developer that avoids a tool for irrational,
 emotional reasons? When did I stop trying to use the best tools for the job and
