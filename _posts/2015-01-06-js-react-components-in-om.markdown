@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vanilla JavaScript React Components in your ClojureScript Om app
+title: Plain JS React Components in your Om app
 class: js-react-om
 description: tl;dr - just use it exactly as you would from JavaScript
 ---
