@@ -8,9 +8,9 @@ description: tl;dr - just use it exactly as you would from JavaScript
 Let's say you want to use an external library such as
 [selectize.js](http://brianreavis.github.io/selectize.js/) in your Om
 application.  First you'll need to include this library - if you're not
-using advanced compilation (you probably should be) then you don't need
-externs - but you probably will be eventually (don't worry about it
-right now if you're just learning and making toy apps), so generate them
+using advanced compilation then you don't need externs - but you
+probably will be eventually (don't worry about it right now if you're
+just learning and making toy apps), so generate them
 [here](http://www.dotnetwise.com/Code/Externs/) or get externs for a few
 common libraries [here](http://closureplease.com/externs/) or just [make
 your
