@@ -56,4 +56,4 @@ and the component's props as the second argument:
 So easy! Thanks to David Nolen for pointing out the obvious solution -
 it just works.
 
-> *dnolen*: making sure that all this stuff works was/is priority #1
+> **dnolen**: making sure that all this stuff works was/is priority #1
