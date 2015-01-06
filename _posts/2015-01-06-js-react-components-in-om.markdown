@@ -18,7 +18,7 @@ own](http://blog.8thlight.com/taryn-sauer/2014/07/31/clojurescript-faux-pas.html
 
 Selectize is based off of jQuery and doesn't come bundled as a React
 component, but you can find a React wrapper for it [here](https://github.com/ggarek/react-selectize).
-If there isn't a React wrapper for a componen t you would like to use,
+If there isn't a React wrapper for a component you would like to use,
 well, you'd have to write your own - perhaps just do it directly in ClojureScript.
 But that's not what this post is about.
 
