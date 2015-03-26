@@ -10,7 +10,9 @@ React-native provides a
 API which allows you to write Objective C to directly access native APIs when necessary.
 
 One case where this is particularly useful is to take advantage of the native authentication libraries,
-such as sign in through Facebook. I'll explain how to do that here.
+such as sign in through Facebook. I'll explain how to do that here. [Or
+just skip ahead to the repo at
+brentvatne/facebook-login](https://github.com/brentvatne/facebook-login).
 
 If you don't have a project you're working on already, create one with `react-native init FacebookLogin`
 and then go to [https://developers.facebook.com/](https://developers.facebook.com/) and create a new
