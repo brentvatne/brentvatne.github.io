@@ -74,7 +74,7 @@ var FacebookLogin = React.createClass({
 
 In XCode, create FacebookLoginManager.h and paste this in:
 
-{% highlight objectivec %}
+{% highlight objective-c %}
 #import "RCTBridgeModule.h"
 
 @interface FacebookLoginManager : NSObject <RCTBridgeModule>
@@ -83,7 +83,7 @@ In XCode, create FacebookLoginManager.h and paste this in:
 
 Also create a FacebookLoginManager.m and paste this in:
 
-{% highlight objectivec %}
+{% highlight objective-c %}
 #import "FacebookLoginManager.h"
 #import "FBSDKCoreKit/FBSDKCoreKit.h"
 #import "FBSDKLoginKit/FBSDKLoginKit.h"
