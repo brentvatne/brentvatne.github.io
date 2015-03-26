@@ -20,7 +20,7 @@ thing to keep in mind for that step is that we will already have an `application
 function in our `AppDelegate` - you can just replace the `return YES` at the end of the existing one with
 the return statement in the guide.
 
-Once this is in place, replace the index js file with:
+Once this is in place, replace the `index.ios.js` file with:
 
 {% highlight javascript %}
 var React = require('react-native');
@@ -72,7 +72,7 @@ var FacebookLogin = React.createClass({
 });
 {% endhighlight %}
 
-In XCode, create FacebookLoginManager.h and paste this in:
+In XCode, create `FacebookLoginManager.h` and paste this in:
 
 {% highlight objc %}
 #import "RCTBridgeModule.h"
@@ -81,7 +81,7 @@ In XCode, create FacebookLoginManager.h and paste this in:
 @end
 {% endhighlight %}
 
-Also create a FacebookLoginManager.m and paste this in:
+Also create a `FacebookLoginManager.m` and paste this in:
 
 {% highlight objc %}
 #import "FacebookLoginManager.h"
