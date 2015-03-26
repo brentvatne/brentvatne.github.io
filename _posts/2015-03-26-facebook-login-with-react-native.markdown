@@ -17,9 +17,11 @@ and then go to [https://developers.facebook.com/](https://developers.facebook.co
 app. Follow the "Getting Started" guide for iOS, up to and including the "Track App Installs and App Opens" step -
 it looks like it might be unnecessary but login requests will always return as cancelled if this is skipped. Another
 thing to keep in mind for that step is that we will already have an `application didFinishLaunchingWithOptions`
-function in our `AppDelegate` - you can just replace the `return YES` at the end of the existing one with
+function in our `AppDelegate` - you can replace the `return YES` at the end of the existing one with
 the return statement in the guide. Do not do the "Let's test out your
 integration" - we won't be using the built-in button here.
+
+One last thing before moving on - be sure to also add the `Bolts` framework included in the Facebook SDK. I didn't see this mentioned in the guide, but if you don't include it then your app will crash and do nothing.
 
 Once this is in place, replace the `index.ios.js` file with:
 
