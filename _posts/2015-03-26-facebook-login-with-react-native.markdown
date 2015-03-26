@@ -70,20 +70,20 @@ var FacebookLogin = React.createClass({
     );
   }
 });
-{% end %}
+{% endhighlight %}
 
 In XCode, create FacebookLoginManager.h and paste this in:
 
-{% highlight objective-c %}
+{% highlight objc %}
 #import "RCTBridgeModule.h"
 
 @interface FacebookLoginManager : NSObject <RCTBridgeModule>
 @end
-{% end %}
+{% endhighlight %}
 
 Also create a FacebookLoginManager.m and paste this in:
 
-{% highlight objective-c %}
+{% highlight objc %}
 #import "FacebookLoginManager.h"
 #import "FBSDKCoreKit/FBSDKCoreKit.h"
 #import "FBSDKLoginKit/FBSDKLoginKit.h"
@@ -111,7 +111,7 @@ Also create a FacebookLoginManager.m and paste this in:
 }
 
 @end
-{% end %}
+{% endhighlight %}
 
 When you run the app and tap on the Facebook Login text, you should be prompted
 to approve permissions for Facebook - once that is complete, you will see the token and user id
