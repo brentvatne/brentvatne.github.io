@@ -55,15 +55,15 @@
 .il { color: #a5c261 } /* Literal.Number.Integer.Long */
 
 pre {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px 10px;
   background: #F4F4F4;
   overflow-y: hidden;
 }
 
 code {
-  padding: 3px 7px 3px 7px;
-  margin: 0px 3px;
+  /* padding: 3px 7px 3px 7px; */
+  padding: 0;
+  margin: 0px;
   background: #F4F4F4;
   font-size: 0.85em;
   border-radius: 3px;
