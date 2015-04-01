@@ -75,6 +75,8 @@ var FacebookLogin = React.createClass({
     );
   }
 });
+
+AppRegistry.registerComponent('FacebookLogin', () => FacebookLogin);
 {% endhighlight %}
 
 In XCode, create `FacebookLoginManager.h` and paste this in:
