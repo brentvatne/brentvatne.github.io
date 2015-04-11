@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React Native View Components: Part 1
+title: React Native View Components (1/2)
 class: react-native-view-components-1
 description: Explores the SliderIOS implementation to understand basic component wrapping techniques.
 ---
