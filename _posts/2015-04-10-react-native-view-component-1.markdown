@@ -212,9 +212,9 @@ render() {
 {% endhighlight %}
 
 But you will find much more than this in `SliderIOS.js`, because it's
-good manners to wrap the native component in React class that validates
-`propTypes`, applies any default styles, and in some cases (this one
-included) wraps an event callback.
+good manners to wrap the native component in a React class that validates
+`propTypes`, applies any default styles, and in some cases (eg: this
+case) wraps an event callback.
 
 {% highlight javascript %}
 var SliderIOS = React.createClass({
