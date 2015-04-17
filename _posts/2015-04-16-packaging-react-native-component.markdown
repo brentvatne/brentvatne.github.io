@@ -7,7 +7,9 @@ description: How to make your hard work shareable
 
 So you've written some code in an existing project and it works great
 and you want to pull it out into its own package, put it on npm, then
-install it back into your project. Fantastic, but how?
+install it back into your project. But wait, your component is partially
+implemented in Objective-C! How can you share this on `npm`? Read on,
+dear friend.
 
 ### Creating the package
 
