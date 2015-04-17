@@ -36,7 +36,7 @@ The highlighted one is for development, the one above it (`$(SRCROOT)/../react-n
 
 ![compile-sources](http://brentvatne.ca/images/packaging/6-compile-sources.png)
 
-5. Add a good `.gitignore` (eg: [Github's Objective-C.gitignore](https://github.com/github/gitignore/blob/master/Objective-C.gitignore))
+5. Add a good `.gitignore` (eg: [Github's Objective-C.gitignore](https://github.com/github/gitignore/blob/master/Objective-C.gitignore)) - don't forget to ignore `node_modules/**/*`.
 
 6. Commit, tag it with the curent version `git tag 0.0.1`
 
