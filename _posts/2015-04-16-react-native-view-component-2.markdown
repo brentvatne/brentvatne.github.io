@@ -124,7 +124,6 @@ And if we run our broken app, we should see this now:
 
 ![fixed-example](http://brentvatne.ca/images/view-components-2/3-fixed.png)
 
-
 Those are the basics of creating an Objective-C backed React Native view
 component. There's a lot more that you can do - I recommend reading
 through some of the standard library and community components such as
@@ -137,4 +136,4 @@ where I describe how you can ship your Objective-C backed components
 through npm.
 
 More comprehensive documentation is upcoming in the React Native docs,
-give me a week or two to put it together. Have fun!
+give me two or three weeks to put it together. Have fun!
