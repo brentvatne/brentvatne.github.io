@@ -118,7 +118,7 @@ component is used.
 Lastly, we need to ensure that we add these new files to `Compile
 Sources`:
 
-![compile-sources](http://brentvatne.ca/images/view-components-2/2-compile-sources.png)
+![compile-sources](http://brentvatne.ca/images/view-components-2/2-compile-sources.gif)
 
 And if we run our broken app, we should see this now:
 
