@@ -13,45 +13,45 @@ Add `active_model_serializers` to your `Gemfile`, run `bundle`, of course.
 
 In `ApplicationController`:
 
-  {% highlight ruby %}
-   # Disable the root node, eg: {projects: [{..}, {..}]}
-  def default_serializer_options
-    {root: false}
-  end
-  {% endhighlight %}
+{% highlight ruby %}
+ # Disable the root node, eg: {projects: [{..}, {..}]}
+def default_serializer_options
+  {root: false}
+end
+{% endhighlight %}
 
 Then in `config/initializers/active_model_serializer.rb`:
 
-  {% highlight ruby %}
-   # Convert attributes from snake_case to lowerCamelCase
-  ActiveModel::Serializer.setup do |config|
-    config.key_format = :lower_camel
-  end
-  {% endhighlight %}
+{% highlight ruby %}
+ # Convert attributes from snake_case to lowerCamelCase
+ActiveModel::Serializer.setup do |config|
+  config.key_format = :lower_camel
+end
+{% endhighlight %}
 
 
 ### Deserializing
 
 Again in `ApplicationController`:
 
-  {% highlight ruby %}
-   # Convert lowerCamelCase params to snake_case automatically
-  before_filter :deep_snake_case_params!
-  def deep_snake_case_params!(val = params)
-    case val
-    when Array
-      val.map {|v| deep_snake_case_params! v }
-    when Hash
-      val.keys.each do |k, v = val[k]|
-        val.delete k
-        val[k.underscore] = deep_snake_case_params!(v)
-      end
-      val
-    else
-      val
+{% highlight ruby %}
+ # Convert lowerCamelCase params to snake_case automatically
+before_filter :deep_snake_case_params!
+def deep_snake_case_params!(val = params)
+  case val
+  when Array
+    val.map {|v| deep_snake_case_params! v }
+  when Hash
+    val.keys.each do |k, v = val[k]|
+      val.delete k
+      val[k.underscore] = deep_snake_case_params!(v)
     end
+    val
+  else
+    val
   end
-  {% endhighlight %}
+end
+{% endhighlight %}
 
 ### And you're done!
 
