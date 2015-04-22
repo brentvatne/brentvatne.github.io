@@ -22,7 +22,7 @@ var { SliderIOS, } = React;
 
 var MySliderApp = React.createClass({
   render() {
-    return <SliderIOS value={75.0} maximumValue={100.0} style={{marginTop: 50}} />
+    return <SliderIOS value={75.0} maximumValue={100.0} />
   }
 });
 {% endhighlight %}
