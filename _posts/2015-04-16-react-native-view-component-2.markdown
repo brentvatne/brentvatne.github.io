@@ -5,7 +5,7 @@ class: react-native-view-components-2
 description: Fixing a bug in SliderIOS by subclassing UISlider
 ---
 
-[Part 1](link-here) discussed how to wrap existing iOS view components
+[Part 1](http://brentvatne.ca/react-native-view-component-1) discussed how to wrap existing iOS view components
 and pass the attributes from JavaScript. This works great for simple use
 cases like wrapping `UISlider`, but you will quickly run into situations
 where you need to exercise a bit more control over your components on
