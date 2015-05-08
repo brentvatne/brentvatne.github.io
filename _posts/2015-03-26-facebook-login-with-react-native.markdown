@@ -116,8 +116,6 @@ Also create a `FacebookLoginManager.m` and paste this in:
 
 @implementation FacebookLoginManager
 
-@implementation FacebookLoginManager
-
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(newSession:(RCTResponseSenderBlock)callback) {
