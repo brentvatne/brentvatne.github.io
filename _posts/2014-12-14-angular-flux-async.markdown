@@ -32,27 +32,27 @@ quickly found to be very awkward.
 
 For example:
 
-  {% highlight javascript %}
-    Store.fetchRecord(id).then(function(record) { $scope.record = record })
-  {% endhighlight %}
+{% highlight javascript %}
+  Store.fetchRecord(id).then(function(record) { $scope.record = record })
+{% endhighlight %}
 
 And I also want to make sure I keep this updated with changes, so:
 
-  {% highlight javascript %}
-    Store.on('change', function(action) { $scope.record = Store.getRecord() })
-  {% endhighlight %}
+{% highlight javascript %}
+  Store.on('change', function(action) { $scope.record = Store.getRecord() })
+{% endhighlight %}
 
 And `Store.fetchRecord` would look something like:
 
-  {% highlight javascript %}
-    $http.get("/records/#{id}").then(function(response) { _record = response.data})
-  {% endhighlight %}
+{% highlight javascript %}
+  $http.get("/records/#{id}").then(function(response) { _record = response.data})
+{% endhighlight %}
 
 Lastly, `Store.getRecord` is simply this:
 
-  {% highlight javascript %}
-    return _record;
-  {% endhighlight %}
+{% highlight javascript %}
+  return _record;
+{% endhighlight %}
 
 Easy enough, although it certainly looks a bit complicated for just
 fetching some data.

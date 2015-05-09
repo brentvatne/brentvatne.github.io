@@ -27,31 +27,31 @@ Now to include the `ReactSelectize` React component within your Om app
 this slightly for older React versions because `createElement` is new),
 let's add this `react-utils.core` module:
 
-  {% highlight clojure %}
-  (ns react-util.core)
+{% highlight clojure %}
+(ns react-util.core)
 
-  (defn build [component props]
-    (let [React (.-React js/window)]
-      (.createElement React component (clj->js props))))
-  {% endhighlight %}
+(defn build [component props]
+  (let [React (.-React js/window)]
+    (.createElement React component (clj->js props))))
+{% endhighlight %}
 
 And inside of our Om app we just have to require `react-util.core` and
 call the build function with our React component as the first argument
 and the component's props as the second argument:
 
-  {% highlight clojure %}
-  (ns example.core
-    (:require [om.core :as om]
-              [om-tools.dom :as dom :include-macros true]
-              [om-tools.core :refer-macros [defcomponent]]
-              [react-util.core :as react]]))
+{% highlight clojure %}
+(ns example.core
+  (:require [om.core :as om]
+            [om-tools.dom :as dom :include-macros true]
+            [om-tools.core :refer-macros [defcomponent]]
+            [react-util.core :as react]]))
 
-  (defcomponent my-component
-    [app-state owner]
-    (render [_]
-     (react/build (.-ReactSelectize js/window)
-                  {:selectId "my-select-id" :onChange #(.log js/console %)})))
-  {% endhighlight %}
+(defcomponent my-component
+  [app-state owner]
+  (render [_]
+   (react/build (.-ReactSelectize js/window)
+                {:selectId "my-select-id" :onChange #(.log js/console %)})))
+{% endhighlight %}
 
 So easy! Thanks to David Nolen for pointing out the obvious solution -
 it just works.

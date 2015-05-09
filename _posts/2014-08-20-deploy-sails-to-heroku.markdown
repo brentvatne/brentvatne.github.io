@@ -23,11 +23,11 @@ description: It's not quite as easy as deploying a Rails app, but it's still eas
 - Add a node version to your `package.json`. The current stable version
   is `0.10.x`, so we need add:
 
-  {% highlight javascript %}
- "engines": {
-     "node": "0.10.x"
-   },
-  {% endhighlight %}
+{% highlight javascript %}
+"engines": {
+  "node": "0.10.x"
+},
+{% endhighlight %}
 
 
 - Create an app for the project on Heroku: `heroku create brents-url-shortener`
@@ -47,12 +47,12 @@ and all of our data will be wiped whenever the app restarts.
 
 - Heroku automatically creates an environment variable that points to the MongoHQ database when you install the add-on. So just copy the following into `config/connections.js` (don't forget to add a trailing comma if you put it before other options):
 
-  {% highlight javascript %}
- productionMongoHqDb: {
-    adapter: 'sails-mongo',
-    url: process.env.MONGOHQ_URL
-  }
-  {% endhighlight %}
+{% highlight javascript %}
+productionMongoHqDb: {
+  adapter: 'sails-mongo',
+  url: process.env.MONGOHQ_URL
+}
+{% endhighlight %}
 
 - Change the connection used for models in the production environment to `productionMongoHqDb` in `config/env/production.js`.
 
@@ -76,27 +76,25 @@ Let's use Redis.
 
 - Copy the following into both `config/sessions.js` and `config/sockets.js`, within the `export` object.
 
-  {% highlight javascript %}
-
- adapter: 'redis',
-  host: process.env.REDIS_HOST,
-  port: process.env.REDIS_PORT,
-  db: process.env.REDIS_DB,
-  pass: process.env.REDIS_PASSWORD
-  {% endhighlight %}
+{% highlight javascript %}
+adapter: 'redis',
+host: process.env.REDIS_HOST,
+port: process.env.REDIS_PORT,
+db: process.env.REDIS_DB,
+pass: process.env.REDIS_PASSWORD
+{% endhighlight %}
 
 - Now so that we can still run our app locally in development, let's make our local environment use the memory store. Paste this into the export object in `config/local.js`
 
-  {% highlight javascript %}
+{% highlight javascript %}
+session: {
+  adapter: 'memory'
+},
 
- session: {
-    adapter: 'memory'
-  },
-
-  sockets: {
-    adapter: 'memory'
-  }
-  {% endhighlight %}
+sockets: {
+  adapter: 'memory'
+}
+{% endhighlight %}
 
   Note: I also had to install `sails-disk` again manually in order for `npm install` to work: `npm install sails-disk --save`
 

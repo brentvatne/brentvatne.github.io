@@ -88,44 +88,44 @@ To make a generic `zoom` aniation, we can just define the CSS properties of
 elements with the `zoom` class at various states in the animation cycle.
 
 
-  {% highlight css %}
+{% highlight css %}
 // This is where we start from: we go from not being 'visible' (eg: ng-if
- // evaluates to false) to 'visible' (eg: ng-if evaluates to true)
- //
- .zoom.ng-enter {
-   transition: 0.5s linear all;
-   position: relative;
-   left: -200px;
-   opacity: 0;
- }
- 
- // This is the state that it will be in when it is 'visible' - (eg: ng-if
- // evaluates to true)
- //
- .zoom.ng-enter-active {
-   left: 0;
-   opacity: 1;
- }
-  {% endhighlight %}
+// evaluates to false) to 'visible' (eg: ng-if evaluates to true)
+//
+.zoom.ng-enter {
+ transition: 0.5s linear all;
+ position: relative;
+ left: -200px;
+ opacity: 0;
+}
+
+// This is the state that it will be in when it is 'visible' - (eg: ng-if
+// evaluates to true)
+//
+.zoom.ng-enter-active {
+ left: 0;
+ opacity: 1;
+}
+{% endhighlight %}
 
 ### With JavaScript
 We can do the same with JavaScript by registering an animation for the class
 using `app.animation('.zoom')`
 
-  {% highlight javascript %}
+{% highlight javascript %}
 app.animation('.zoom', function() {
-   return {
-     enter: function(element, done) {
-       // Set up the initial state, like ng-enter above
-       element.css({position: relative; left: '-200px', opacity: 0});
- 
-       // Here we animate to the visible state, just like ng-enter-active above,
-       // and then we fire the done callback that was passed in.
-       element.animate({left: '0px', opacity: 1}, done);
-     }
+ return {
+   enter: function(element, done) {
+     // Set up the initial state, like ng-enter above
+     element.css({position: relative; left: '-200px', opacity: 0});
+
+     // Here we animate to the visible state, just like ng-enter-active above,
+     // and then we fire the done callback that was passed in.
+     element.animate({left: '0px', opacity: 1}, done);
    }
- });
-  {% endhighlight %}
+ }
+});
+{% endhighlight %}
 
 The above example uses jQuery to animate, but you could use anything as long as it
 calls the done callback when the animation is complete. As I said in the preface above,
@@ -141,12 +141,12 @@ You can add a stagger to the enter and leave animations on `ng-repeat` (some
 period of time in between when an animation starts on an item and its following
 item), just add `-stagger` to the end of the `ng-enter` and `ng-leave` classes.
 
-  {% highlight css %}
+{% highlight css %}
 .zoom.ng-enter-stagger, .zoom.ng-leave-stagger {
-   transition-delay: 0.2s;
-   transition-duration: 0s;
- }
-  {% endhighlight %}
+ transition-delay: 0.2s;
+ transition-duration: 0s;
+}
+{% endhighlight %}
 
 ### ng-animate-children
 
@@ -159,21 +159,21 @@ by adding delays, but that adds a lot of coupling and is just plain messy. So
 This module is still experimental. The current API allows us to define
 sequences as follows:
 
-  {% highlight html %}
+{% highlight html %}
 <div ng-if="visible" class="dark-stage">
-   <ng-animation>
-     <ng-animate-sequence on="enter">
-       <ng-animate selector="li" stagger="500" apply-classes="zoom"></ng-animate>
-     </ng-animate-sequence>
-   </ng-animation>
- 
-   <ul>
-     <li>..</li>
-     <li>..</li>
-     <li>..</li>
-   </ul>
- </div>
-  {% endhighlight %}
+ <ng-animation>
+   <ng-animate-sequence on="enter">
+     <ng-animate selector="li" stagger="500" apply-classes="zoom"></ng-animate>
+   </ng-animate-sequence>
+ </ng-animation>
+
+ <ul>
+   <li>..</li>
+   <li>..</li>
+   <li>..</li>
+ </ul>
+</div>
+{% endhighlight %}
 
 This is really neat because it allows us to animate sequences in the Angular way - declaratively, through markup. The impetus for this sequencer was Material
 Design - in particular the [Hierarchical timing](http://www.google.com/design/spec/animation/meaningful-transitions.html#meaningful-transitions-visual-continuity)
@@ -188,23 +188,23 @@ it allows you to persist an element across transitions without having to manuall
 Check out the [example from the yearofmoo ng-europe presentation](https://www.youtube.com/watch?v=3hktBbxFxSM#t=1310).
 
 
-  {% highlight html %}
+{% highlight html %}
 // Assumes that this is within some view and selectItem() triggers a view change
- <div class="dark-stage">
-   <ng-animation>
-     <ng-animate-sequence on="leave">
-       <ng-animate-keep selector=".photo" stagger="500">
-       <ng-animate selector="li" stagger="500" apply-classes="zoom"></ng-animate>
-     </ng-animate-sequence>
-   </ng-animation>
- 
-   <ul>
-     <li ng-repeat="item in items">
-       <img src="xxx.png" class="photo" ng-click="selectItem(item)">
-     </li>
-   </ul>
- </div>
-  {% endhighlight %}
+<div class="dark-stage">
+ <ng-animation>
+   <ng-animate-sequence on="leave">
+     <ng-animate-keep selector=".photo" stagger="500">
+     <ng-animate selector="li" stagger="500" apply-classes="zoom"></ng-animate>
+   </ng-animate-sequence>
+ </ng-animation>
+
+ <ul>
+   <li ng-repeat="item in items">
+     <img src="xxx.png" class="photo" ng-click="selectItem(item)">
+   </li>
+ </ul>
+</div>
+{% endhighlight %}
 
 `ng-animate-keep` will "look for elements to persist across views, and then match the element in the second view".
 
@@ -215,52 +215,52 @@ Warning: this promise does not run within the digest cycle, so you need to use
 `$scope.$apply` if you're going to change some $scope value when the animation is
 completed.
 
-  {% highlight javascript %}
+{% highlight javascript %}
 var promise = $animate.leave(element).then(function() {
-   $scope.$apply(function() {
-      $location.path('/new-page');
-   });
- }
-
- // You can also cancel it, which will still run the then callback but
- // skip the animation
- skipAnimationButton.on('click', function() {
-   $animate.cancel(promise);
+ $scope.$apply(function() {
+    $location.path('/new-page');
  });
-  {% endhighlight %}
+}
+
+// You can also cancel it, which will still run the then callback but
+// skip the animation
+skipAnimationButton.on('click', function() {
+ $animate.cancel(promise);
+});
+{% endhighlight %}
 
 
 ### $animate.animate
 
 Inline animations - pass in values for the animation:
 
-  {% highlight javascript %}
+{% highlight javascript %}
 $animate.animate(angular.element(box),
-   // From state
-   {},
-   // To state
-   {left: coords[0], top: coords[1]},
-   // Class to add
-   'active'
- );
-  {% endhighlight %}
+ // From state
+ {},
+ // To state
+ {left: coords[0], top: coords[1]},
+ // Class to add
+ 'active'
+);
+{% endhighlight %}
 
 Assuming that the `box` element has some CSS applied for transitioning
 (eg: `transition: all 0.2s linear;`) - or we can animate using the
 `app.animation` function:
 
-  {% highlight javascript %}
+{% highlight javascript %}
 app.animation('.zoom', {
-   return {
-     // Exactly the same for removeClass
-     addClass: function(element, className, done, styles) {
-       // styles contains the inline styles, injected from $animate.animte
-       console.log(styles.from);
-       console.log(styles.to);
-     }
+ return {
+   // Exactly the same for removeClass
+   addClass: function(element, className, done, styles) {
+     // styles contains the inline styles, injected from $animate.animte
+     console.log(styles.from);
+     console.log(styles.to);
    }
- })
-  {% endhighlight %}
+ }
+})
+{% endhighlight %}
 
 ### Read more
 - [Staggering Animations in AngularJS](http://www.yearofmoo.com/2013/12/staggering-animations-in-angularjs.html)

@@ -19,17 +19,15 @@ a good solution. Here is what I did:
 ### Install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/) through [homebrew](http://mxcl.github.com/homebrew/)
 
 {% highlight bash %}
- brew install reattach-to-user-namespace
- 
+brew install reattach-to-user-namespace
 {% endhighlight %}
 
 ### Open tmux.conf and paste the following lines
 
 {% highlight bash %}
- set-option -g default-command "reattach-to-user-namespace -l zsh"
-  bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
-  bind p run "tmux paste-buffer"
- 
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind p run "tmux paste-buffer"
 {% endhighlight %}
 
 Now when you select text with your cursor in Tmux, if you press `prefix + y`
