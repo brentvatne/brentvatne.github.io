@@ -137,8 +137,6 @@ RCT_EXPORT_METHOD(newSession:(RCTResponseSenderBlock)callback) {
 };
 
 @end
-
-@end
 {% endhighlight %}
 
 When you run the app and tap on the Facebook Login text, you should be prompted
