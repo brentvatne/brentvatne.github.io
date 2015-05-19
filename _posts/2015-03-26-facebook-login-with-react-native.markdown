@@ -46,10 +46,6 @@ var FacebookLogin = React.createClass({
     }
   },
 
-  componentDidMount() {
-    var self = this;
-  },
-
   login() {
     FacebookLoginManager.newSession((error, info) => {
       if (error) {
