@@ -5,6 +5,20 @@ class: react-native-intro-opendns
 description: Video and slides from my presentation.
 ---
 
+I had a great time talking about React Native last night at the OpenDNS
+Open Late meetup. Special thanks to @vjeux, @ide, @adamcooper and
+@mikemartinson for reading over my slides beforehand.
+
+I also wanted to note that although at times during the presentation I
+speak a bit harshly about other approaches to mobile app development,
+I don't mean them any disrespect. I believe that each approach has its
+own particular set of use cases and that multiple solutions can exist in
+harmony, serving different audiences and needs. The problems that I
+highlighted were issues that I personally observed and do not
+necessarily represent the opinions of my employer or any other
+organization that I am involved with. Take my opinion as a single data point
+and do your own research!
+
 ### Slides
 
 <iframe src="//slides.com/notbrent/react-native/embed?token=FsxLKRJB4PgpsbqYDdQD1garozQr" width="100%" height="600" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
