@@ -32,3 +32,10 @@ description: Video and slides from my presentation.
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Great intro talk on React Native tonight at <a href="https://twitter.com/opendns">@opendns</a> . Thanks, <a href="https://twitter.com/notbrent">@notbrent</a> ! Now I&#39;ve got to try building something with it :)</p>&mdash; Grigory Kruglov (@lunafiko) <a href="https://twitter.com/lunafiko/status/601246534764658688">May 21, 2015</a></blockquote>
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+  setInterval(function() {
+    $('.twitter-tweet-rendered').css({width: '100%'})
+  }, 500);
+</script>
