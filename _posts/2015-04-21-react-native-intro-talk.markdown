@@ -15,6 +15,13 @@ description: Video and slides from my presentation.
 
 ### Twitter
 
+<style>
+  blockquote.twitter-tweet {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+</style>
+
 <blockquote class="twitter-tweet" lang="en"><p lang="tl" dir="ltr">~<a href="https://twitter.com/notbrent">@notbrent</a> presenting <a href="https://twitter.com/hashtag/React?src=hash">#React</a> Native - great intro slide haha <a href="http://t.co/pQhhCzkrYN">pic.twitter.com/pQhhCzkrYN</a></p>&mdash; ༒ ɐɥɔǝʇɐɯ ʍǝɹpuɐ ༒ (@amatecha) <a href="https://twitter.com/amatecha/status/601206582194479104">May 21, 2015</a></blockquote>
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/notbrent">@notbrent</a> presenting <a href="https://twitter.com/reactjs">@reactjs</a> native <a href="https://twitter.com/opendns">@opendns</a> with <a href="https://twitter.com/BomberBrewing">@BomberBrewing</a> beers :) <a href="http://t.co/aix9RzrkPo">pic.twitter.com/aix9RzrkPo</a></p>&mdash; --[)r3\/\/-- (@drew_bro) <a href="https://twitter.com/drew_bro/status/601222047469961216">May 21, 2015</a></blockquote>
