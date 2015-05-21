@@ -7,7 +7,9 @@ description: Video and slides from my presentation.
 
 I had a great time talking about React Native last night at the OpenDNS
 Open Late meetup. Special thanks to @vjeux, @ide, @adamcooper and
-@mikemartinson for reading over my slides beforehand.
+@mikemartinson for reading over my slides beforehand. Also big thanks to
+@jsierles for his work on the [React Native Playgaround](https://rnplay.org/),
+and @appetizeio for hosting the simulators.
 
 I also wanted to note that although at times during the presentation I
 speak a bit harshly about other approaches to mobile app development,
