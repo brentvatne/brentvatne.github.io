@@ -21,7 +21,7 @@ dear friend.
 the react-native standard library, feel free to adopt it or use your
 own**
 
-2. `cd` to the proejct directory and run `npm init`, fill out your info!
+2. `cd` to the project directory and run `npm init`, fill out your info!
 
 ![npm-init](http://brentvatne.ca/images/packaging/3-npm-init.png)
 
